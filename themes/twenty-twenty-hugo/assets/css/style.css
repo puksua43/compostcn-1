@@ -1474,7 +1474,7 @@ body:not(.enable-search-modal) .site-logo img {
 /* Header Navigation ------------------------- */
 
 .header-navigation-wrapper {
-	display: none;
+	display: inline-block;
 }
 
 /* Header Toggles ---------------------------- */
@@ -3574,7 +3574,7 @@ figure.wp-block-table.is-style-stripes {
 /* Alignment Classes ------------------------- */
 
 .entry-content>*:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-	max-width: 58rem;
+	max-width: 90rem;
 	width: calc(100% - 4rem);
 }
 

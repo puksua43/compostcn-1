@@ -33,27 +33,27 @@ author = "author"
 ############################## navigation ###############################
 
 # main menu
-[[menu.main]]
+[[menu.desktop]]
 name = "主页"
 URL = "/"
 weight = 1
 
-[[menu.main]]
+[[menu.desktop]]
 name = "关于"
 URL = "about"
 weight = 2
 
-[[menu.main]]
+[[menu.desktop]]
 name = "推文"
 URL = "blog"
 weight = 3
 
-[[menu.main]]
+[[menu.desktop]]
 name = "联系方式"
 URL = "contact"
 weight = 4
 
-[[menu.main]]
+[[menu.desktop]]
 name = "示例页面"
 URL = "sample-page"
 weight = 5
