@@ -7,9 +7,7 @@ date: "2020-03-14T15:40:24+06:00"
 description: This is meta description
 draft: false
 image: /images/image-20201210095431698.png
-tags:
-- work
-- day
+intro: 雪华说：Ghana是我们目前看到的未借助外来动力、透气性最好的堆肥设施之一，在此首先感谢印度堆肥专家Vasuki授权我们无偿使用和推广其设计。通过一年多的实践和实验，我们项目组摸索出了一系列操作规范，就一个Ghana堆肥箱而言，在连续每天添加全厨余（50公斤左右）、不翻堆的前提下，基本做到无渗滤液、无蚊虫、无异味...
 title: 他山之石可以攻玉-做个Ghana学堆肥
 ---
 ### 他山之石可以攻玉-做个Ghana学堆肥

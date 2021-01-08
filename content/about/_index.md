@@ -1,7 +1,7 @@
 ---
 description: This is meta description
 draft: false
-image: images/ft_bg.jpg
+image: images/20210108092950.gif
 title: ABOUT
 ---
 
