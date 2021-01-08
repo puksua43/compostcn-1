@@ -1,6 +1,6 @@
-######################## default configuration ####################
+
 baseURL = "/"
-title = "中国厨余堆肥"
+title = "中国厨余堆肥网"
 theme = "twenty-twenty-hugo"
 languageName = "En"
 languageCode = "en-us"
@@ -16,6 +16,9 @@ disableLanguages = [] # desable language from here
 googleAnalytics = "" # example : UA-123-45
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+
+[permalinks]
+posts = "/:year/:month/:title"
 
 ############################## Output ###############################
 [outputs]
@@ -34,42 +37,38 @@ author = "author"
 
 # main menu
 [[menu.desktop]]
-name = "主页"
-URL = "/"
+name = "可视化平台"
+URL = "visual"
 weight = 1
 
 [[menu.desktop]]
-name = "关于"
-URL = "about"
+name = "雪华说"
+URL = "blog"
 weight = 2
 
 [[menu.desktop]]
-name = "推文"
-URL = "blog"
+name = "分级管理平台"
+URL = "manage"
 weight = 3
 
 [[menu.desktop]]
-name = "联系方式"
-URL = "contact"
+name = "前言与案例"
+URL = "preface"
 weight = 4
 
 [[menu.desktop]]
-name = "示例页面"
-URL = "sample-page"
+name = "论坛"
+URL = "forum"
 weight = 5
 
-# only desktop menu
 [[menu.desktop]]
-name = "联系我们"
-URL = "contact"
-weight = 1
+name = "关于我们"
+URL = "about"
+weight = 6
 
 
 #################### default parameters ################################
 [params]
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
 
 # cookies
 [params.cookies]
@@ -82,12 +81,12 @@ heading = "中国厨余堆肥试点项目"
 image = "images/2020-landscape-1-2.png"
 
 # blog
-[params.blog]
-heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+# [params.blog]
+# heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
 
 # call to action
 [params.call_to_action]
-enable = true
+enable = false
 title = "联系我们获取更多信息。"
 content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
 button_label = "联系我们"
@@ -103,20 +102,49 @@ image = "images/2020-square-2.png"
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-1.png"
 
-
 # footer
 [params.footer]
+enable = false
 title = "关于本网站"
 content = "This may be a good place to introduce yourself and your site or include some credits."
-address = "123 Main Street <br> New York, NY 10001"
-hours = "Monday–Friday: 9:00AM–5:00PM <br> Saturday & Sunday: 11:00AM–3:00PM"
-copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com) ported from [WordPress Twenty Twenty](https://github.com/WordPress/twentytwenty)"
+address = "江苏省南京市溧水区秦淮大道288号"
+copyright = "Copyright &copy; 2020 hugo theme"
+
+[[params.links]]
+name = "南京大学"
+URL = "https://www.nju.edu.cn/"
+weight = 1
+
+[[params.links]]
+name = "南京大学环境学院"
+URL = "https://hjxy.nju.edu.cn/"
+weight = 2
+
+[[params.links]]
+name = "南京大学自然资源研究院"
+URL = "https://liee.nju.edu.cn/"
+weight = 3
+
+[[params.links]]
+name = "生态环境部"
+URL = "http://www.mee.gov.cn/"
+weight = 4
+
+[[params.links]]
+name = "生态环境部环境规划院"
+URL = "http://www.caep.org.cn/"
+weight = 5
+
+[[params.links]]
+name = "中国环境科学协会"
+URL = "http://www.chinacses.org/"
+weight = 6
 
 ############################# social site ########################
-[params.social]
-yelp = "#"
-facebook = "#"
-twitter = "#"
-instagram = "#"
-email = "#"
-linkedin = "#"
+# [params.social]
+# yelp = "#"
+# facebook = "#"
+# twitter = "#"
+# instagram = "#"
+# email = "#"
+# linkedin = "#"

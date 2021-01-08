@@ -1,10 +1,12 @@
-<div class="footer-nav-widgets-wrapper header-footer-group">
+
   <div class="footer-inner section-inner">
     <div class="footer-top has-social-menu">
       <nav aria-label="Social links" class="footer-social-wrapper">
         {{partial "social.html" .}}
       </nav>
     </div><!-- .footer-top -->
+
+	{{ if .Site.Params.footer.enable }}
     {{ with .Site.Params.footer }}
     <aside class="footer-widgets-outer-wrapper" role="complementary">
       <div class="footer-widgets-wrapper">
@@ -24,7 +26,7 @@
               <h2 class="widget-title subheading heading-size-3">发现我们</h2>
               <div class="textwidget">
                 <p><strong>地址</strong><br/> {{ .address | markdownify }}</p>
-                <p><strong>时间</strong><br/>{{ .hours | markdownify }}</p>
+				<!-- <p><strong>时间</strong><br/>{{ .hours | markdownify }}</p> -->
               </div>
             </div>
           </div>
@@ -32,6 +34,9 @@
       </div><!-- .footer-widgets-wrapper -->
     </aside><!-- .footer-widgets-outer-wrapper -->
     {{ end }}
+    {{ end }}
+
+
 
   </div><!-- .footer-inner -->
 
@@ -39,6 +44,63 @@
 
 
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
+
+	<!-- 链接 -->
+	<div class="lianjie">
+		<h3 class="content3_title">
+			<div class="title_name">友情链接</div>
+		</h3>
+		<div class="sla_zi">
+			<ul>
+				{{ range .Site.Params.links }}
+				<li><a href="{{	.URL | absURL }}" target="_blank">{{ .name }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+
+<div class="jr-footer">
+    <div style="width:1200px;margin:0 auto;">
+        <p style="float:right;width：150px;text-align: center;">
+            <a href="http://bszs.conac.cn/sitename?method=show&amp;id=287B055420B224BDE053012819ACA751" target="_blank"><img src="/DFS/template/861/images/hz.png" alt=""></a>
+        </p>
+        <p style="float:right;width：300px;margin-top:-15px;">
+            <a target="_blank"><img class=" img1" src="/DFS/template/861/images/wxgzh.png" alt=""></a>
+            </p><p style="color:#ffffff;font-size:14px;width:100px;float:right;margin-right: -111px;margin-top: 118px;">关注我们</p>
+        <p></p>
+      <div class="footer-ul">
+        <ul class="u1 fl">
+          <li>走进研究院</li>
+          <li><a href="/zjyjy/index.html">院况介绍</a></li>
+          <li><a href="/zjyjy/index.html">组织机构</a></li>
+          <li><a href="/zjyjy/index.html">重点实验室</a></li>
+        </ul>
+        <ul class="u2 fl">
+          <li>信息公开</li>
+          <li><a href="/xxgk/zhxw/index.html">综合新闻</a></li>
+          <li><a href="/xxgk/tzgg/index.html">通知公告</a></li>
+          <li><a href="/xxgk/whjs/index.html">文化建设</a></li>
+        </ul>
+        <ul class="u3 fl">
+          <li>技术服务</li>
+          <li><a href="/jsfw/jsfx/index.html">技术方向</a></li>
+          <li><a href="/jsfw/jscg/index.html">技术成果</a></li>
+          <li><a href="/jsfw/jjfa/index.html">解决方案</a></li>
+        </ul>
+        <ul class="u4 fl">
+          <li>创新合作</li>
+          <li><a href="/cxhz/xsjl/index.html">学术交流</a></li>
+          <li><a href="/cxhz/gnhz/index.html">国内合作</a></li>
+          <li><a href="/cxhz/jwhz/index.html">境外合作</a></li>
+        </ul>
+      </div>
+        <div class="footer" style="float: left; width:700px;">
+            
+            <p style="display: inline-flex;">版权所有：南京大学（溧水）生态环境研究院</p><p style="margin-left: 10px;display: inline-flex;">备案序号：05031605号</p> <p style="margin-left: 10px;display: inline-flex;">地址：江苏省南京市溧水区秦淮大道288号</p>  <p></p> 
+        </div>
+    </div>
+</div>
+
   <div class="section-inner">
     <div class="footer-credits">
       <p class="footer-copyright">{{ .Site.Params.footer.copyright | markdownify }}</p><!-- .powered-by-wordpress -->

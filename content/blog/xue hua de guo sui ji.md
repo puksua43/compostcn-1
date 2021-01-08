@@ -10,6 +10,7 @@ image: images/image-20201210135159404.png
 tags:
 - work
 - day
+weight: 1
 title: 雪华德国随记：厨余堆肥仍占据“半壁江山”
 ---
 ### 雪华德国随记：厨余堆肥仍占据“半壁江山”

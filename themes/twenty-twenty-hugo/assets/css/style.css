@@ -2055,7 +2055,6 @@ button.sub-menu-toggle.active svg {
 .menu-copyright {
 	display: none;
 	font-size: 1.6rem;
-	font-weight: 500;
 	margin: 0;
 }
 
@@ -4418,6 +4417,7 @@ div.comment:first-of-type {
 	text-decoration: underline;
 }
 
+
 /* FOOTER SOCIAL */
 
 .footer-social-wrapper {
@@ -4499,8 +4499,7 @@ a.to-the-top>* {
 }
 
 .footer-copyright {
-	font-weight: 600;
-	margin: 0;
+	padding-left: 7px;
 }
 
 .powered-by-wordpress {
@@ -4512,6 +4511,102 @@ a.to-the-top>* {
 	display: none;
 }
 
+/* FOOTER LINKS */
+.lianjie {	
+	height: 200px; 
+	width: 1200px;
+	margin: auto;
+	background: #ffffff;
+	padding: 0.1px;
+}
+
+.content3_title {
+    width: 1160px;
+    margin: 30px auto;
+    height: 30px;
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+}
+
+.content3_title div {
+    float: left;
+    display: inline-block;
+}
+
+.title_name {
+    width: 76px;
+    height: 29px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: rgb(0, 49, 82);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 49, 82);
+}
+
+.sla_zi ul li {
+    float: left;
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 10px;
+    line-height: 36px;
+	list-style: none;
+}
+
+.sla_zi ul li a {	
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 14px;
+	padding: 0px 10px;
+	font-family: 微软雅黑;
+}
+
+.jr-footer {	
+	width: 100%;
+	height: 160px;
+	padding-top: 15px;
+	background-image: url("/images/ft_bg.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.footer-ul {	
+	width: 100%;
+	height: 100px;
+}
+
+.footer-ul a {	
+	color: #000000;
+	font-size: 12px;
+}
+
+.footer-ul ul {	
+	list-style-type: none;
+	float: left;
+	display: block;
+	padding-left: 10px;
+}
+
+.u1 ul {	
+	margin-left: 0;
+}
+
+.u2,
+.u3,
+.u4{	
+    display: block;
+	margin-left: 125px;
+}
+
+.footer {
+    height: 25px;
+    margin: 0 60px;
+    border-top: 0px solid #2b85da;
+    margin-top: 20px;
+}
+
+.footer p {	
+	font-size: 12px;
+	color: #000000;
+}
 
 /* -------------------------------------------------------------------------- */
 
@@ -5617,7 +5712,8 @@ a.to-the-top>* {
 	}
 
 	.footer-copyright {
-		font-weight: 700;
+		font-size: 12px;
+		margin: 0 45px;
 	}
 
 	.powered-by-wordpress {
