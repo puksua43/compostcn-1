@@ -1793,6 +1793,26 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 	width: unset;
 }
 
+
+/* Drop down */
+.dropdown {	
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* -------------------------------------------------------------------------- */
 
 /*	5. Menu Modal
@@ -4662,6 +4682,36 @@ a.to-the-top>* {
 	.wp-block-gallery.alignright {
 		max-width: 26rem;
 	}
+
+	/* new-gallery */
+
+	.new-gallery {	
+		width: calc((100% - 32px) / 3);
+		list-style-type: none;
+		float: left;
+		display: inline;
+	}
+
+	.img-group {	
+		position: relative;
+		display: inline-block;
+		width: 300px;
+	}
+
+	.img-tip {	
+		position: absolute;
+		bottom: 0;
+	    background: #333;
+	    color: #fff;
+	    opacity: 0.6;
+	    display: none;
+	}
+
+	.img-group:hover .img-tip {
+		display: block;
+	    width: 100%;
+		text-align: center;
+	}	
 
 	/* BLOCK: TABLE WIDTH */
 	.wp-block-table.alignleft,
