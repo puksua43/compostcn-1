@@ -86,15 +86,16 @@
       
       {{ if .Site.Params.gallery.enable }}
       {{ with .Site.Params.gallery }}
-      <figure class="wp-block-gallery alignwide columns-2 is-cropped">
-        <ul class="blocks-gallery-grid">
+        <ul class="new-gallery-grid">
           {{ range .gallery_item }}
-          <li class="blocks-gallery-item">
-            <figure><img src="{{ .image | absURL }}" style="width: 200px; height: 200px margin-right: 20px"/></figure>
+          <li class="new-gallery">
+			  <div class="img-group">
+				<img src="{{ .image | absURL }}" />
+				<div class="img-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta dolor neque, at consectetur arcu vulputate non.</div>
+			  </div>
           </li>
           {{ end }}
         </ul>
-      </figure>
       {{ end }}
       {{ end }}
 
