@@ -43,38 +43,78 @@ URL = "/"
 weight = 1
 
 [[menu.desktop]]
-name = "可视化平台"
-URL = "visual"
+name = "平台介绍"
+URL = "introduce"
 weight = 2
+
+[[menu.desktop]]
+name = "可视化"
+URL = "visual"
+weight = 3
+
+[[menu.desktop]]
+name = "数据云"
+URL = "clouddata"
+weight = 4
 
 [[menu.desktop]]
 name = "雪华说"
 URL = "blog"
-weight = 3
-
-[[menu.desktop]]
-name = "分级管理平台"
-URL = "manage"
-weight = 4
+weight = 5
 
 [[menu.desktop]]
 name = "前沿与案例"
 URL = "preface"
-weight = 5
+weight = 6
 
 [[menu.desktop]]
 name = "论坛"
 URL = "forum"
-weight = 6
-
-[[menu.desktop]]
-name = "关于我们"
-URL = "about"
 weight = 7
 
 
+####### menu.main #######
+[[menu.main]]
+name = "homepage"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "数据云"
+URL = "#"
+weight = 2
+
+[[menu.main]]
+name = "雪华说"
+URL = "/blog"
+weight = 3
+
+[[menu.main]]
+name = "前沿动态"
+URL = "#"
+weight = 4
+
+[[menu.main]]
+name = "堆肥小课堂"
+URL = "#"
+weight = 5
+
+[[menu.main]]
+name = "关于我们"
+URL = "/about"
+weight = 6
+
 #################### default parameters ################################
 [params]
+highlightColor = ""
+
+[params.homepage]
+image = "images/homepage.png"
+
+[params.colors]
+backgroundcolor = "#7298f4"
+highlightcolor = "#7298f4"
+hoverFontColor = "#7298f4"
 
 # cookies
 [params.cookies]
@@ -98,9 +138,17 @@ content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 button_label = "联系我们"
 button_url = "contact"
 
+# logo
+[Params.logo]
+  image = "images/logo.png" # Logo image. Path relative to "static"
+# title = "Mainroad" # Logo title, otherwise will use site title
+# subtitle = "Just another site" # Logo subtitle
+
+
+  
 # gallery
 [params.gallery]
-enable = true
+enable = false
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-2.png"
