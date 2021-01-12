@@ -2001,6 +2001,26 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 /*--------------------------*/
 /* -------------------------------------------------------------------------- */
 
+/* Drop down */
+.dropdown {	
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 /*	5. Menu Modal
 /* -------------------------------------------------------------------------- */
 
@@ -4869,7 +4889,11 @@ a.to-the-top>* {
 		max-width: 26rem;
 	}
 
+<<<<<<< HEAD
+/* new-gallery */
+=======
 	/* new-gallery */
+>>>>>>> 3b3540ce833ba8932c51be0e46daf4e7d18a4458
 
 	.new-gallery {	
 		width: calc((100% - 32px) / 3);
@@ -4899,12 +4923,42 @@ a.to-the-top>* {
 		text-align: center;
 	}	
 
+<<<<<<< HEAD
+	/* cloud */
+  .cloud-grid{
+   height: 400px; 
+   padding: 10rem 5% 0 5%; 
+   display: block;
+   background-color:#F2F2F2;
+  }
+  
+  .photo{
+
+    float: left; 
+    width: 40%; 
+    max-height: 300px;
+  }
+  .intro{
+    float: right; 
+    width: 50%; 
+    padding-bottom: 10rem;
+  }
+
+=======
+>>>>>>> 3b3540ce833ba8932c51be0e46daf4e7d18a4458
 	/* BLOCK: TABLE WIDTH */
 	.wp-block-table.alignleft,
 	.wp-block-table.alignright {
 		max-width: 100%;
 	}
 
+  /* Frontier */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  
+  
 	/* Entry Content ------------------------- */
 
 	/* ALIGNMENT CLASSES */

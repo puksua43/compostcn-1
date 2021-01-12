@@ -138,6 +138,7 @@ content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 button_label = "联系我们"
 button_url = "contact"
 
+<<<<<<< HEAD
 # logo
 [Params.logo]
   image = "images/logo.png" # Logo image. Path relative to "static"
@@ -146,12 +147,28 @@ button_url = "contact"
 
 
   
+=======
+#cloud
+[params.cloud]
+enable = true
+heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+
+#Frontier_case
+[params.Frontier]
+enable = true
+
+
+>>>>>>> 1777060a337ad593d5f11ef70b51e9b865ec3ce9
 # gallery
 [params.gallery]
 enable = false
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-2.png"
+
+
+[[params.gallery.gallery_item ]]
+image = "images/2020-square-1.png"
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-1.png"
