@@ -38,34 +38,39 @@ author = "author"
 
 # main menu
 [[menu.desktop]]
+name = "首页"
+URL = "/"
+weight = 1
+
+[[menu.desktop]]
 name = "可视化平台"
 URL = "visual"
-weight = 1
+weight = 2
 
 [[menu.desktop]]
 name = "雪华说"
 URL = "blog"
-weight = 2
+weight = 3
 
 [[menu.desktop]]
 name = "分级管理平台"
 URL = "manage"
-weight = 3
+weight = 4
 
 [[menu.desktop]]
 name = "前沿与案例"
 URL = "preface"
-weight = 4
+weight = 5
 
 [[menu.desktop]]
 name = "论坛"
 URL = "forum"
-weight = 5
+weight = 6
 
 [[menu.desktop]]
 name = "关于我们"
 URL = "about"
-weight = 6
+weight = 7
 
 
 #################### default parameters ################################
@@ -110,6 +115,9 @@ enable = false
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-2.png"
 
+
+[[params.gallery.gallery_item ]]
+image = "images/2020-square-1.png"
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-1.png"
