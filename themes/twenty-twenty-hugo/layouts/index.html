@@ -83,7 +83,7 @@
       {{ end }}
       {{ end }}
 
-      
+<!--      
       {{ if .Site.Params.gallery.enable }}
       {{ with .Site.Params.gallery }}
       <figure class="wp-block-gallery alignwide columns-2 is-cropped">
@@ -95,6 +95,103 @@
           {{ end }}
         </ul>
       </figure>
+      {{ end }}
+      {{ end }}
+-->
+
+      {{ if .Site.Params.cloud.enable }}
+      {{ with .Site.Params.cloud }}      
+        <div class="cloud-grid" >
+	        <div class="photo"><img src="images/image-20201210145037484.png"></div>
+	        <div class="intro">
+	          <h3 style="font-size: 25px; margin: 0 0 3rem 0; border-bottom-style: groove; border-bottom-width: 5px;">数据云</h3>
+	          <p>高尔夫球运动是一项健康、绿色、快乐、回归自然的体育运动，打高尔夫球能让人体验挑战与激情，实现人与自然的和谐。人与人礼貌谦让的良好运动精神，是高尔夫球运动的精髓所在。
+                        </p>
+	        </div>
+        </div>
+      {{ end }}
+      {{ end }}      
+
+
+
+      {{ if .Site.Params.Frontier.enable }}
+      {{ with .Site.Params.Frontier }}
+       <title>Bootstrap 实例</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <div id="demo" class="carousel slide" data-ride="carousel" >
+ 
+  <!-- 指示符 -->
+  <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+ 
+  <!-- 轮播图片 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+      <div class="carousel-caption">
+        <h3>第一张图片描述标题</h3>
+        <p>描述文字!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+      <div class="carousel-caption">
+        <h3>第二张图片描述标题</h3>
+        <p>描述文字!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+      <div class="carousel-caption">
+        <h3>第三张图片描述标题</h3>
+        <p>描述文字!</p>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- 左右切换按钮 -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+<script>
+$(function(){
+    $('#identifier').carousel({
+    interval: 2000
+    });
+    });
+</script> 
+</div>
+
+      {{ end }}
+      {{ end }}
+
+
+
+      {{ if .Site.Params.gallery.enable }}
+      {{ with .Site.Params.gallery }}
+        <ul class="new-gallery-grid">
+          {{ range .gallery_item }}
+          <li class="new-gallery">
+			  <div class="img-group">
+				  <img src="{{ .image | absURL }}" />
+				  <div class="img-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta dolor neque, at consectetur arcu vulputate non.
+				</div>
+			  </div>
+          </li>
+          {{ end }}
+        </ul>
       {{ end }}
       {{ end }}
 

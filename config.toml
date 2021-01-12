@@ -53,7 +53,7 @@ URL = "manage"
 weight = 3
 
 [[menu.desktop]]
-name = "前言与案例"
+name = "前沿与案例"
 URL = "preface"
 weight = 4
 
@@ -93,12 +93,26 @@ content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 button_label = "联系我们"
 button_url = "contact"
 
+#cloud
+[params.cloud]
+enable = true
+heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+
+#Frontier_case
+[params.Frontier]
+enable = true
+
+
 # gallery
 [params.gallery]
-enable = true
+enable = false
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-2.png"
+
+
+[[params.gallery.gallery_item ]]
+image = "images/2020-square-1.png"
 
 [[params.gallery.gallery_item ]]
 image = "images/2020-square-1.png"

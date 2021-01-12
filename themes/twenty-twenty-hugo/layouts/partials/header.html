@@ -47,7 +47,19 @@
       <nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
         <ul class="primary-menu reset-list-style">
           {{ range .Site.Menus.desktop }}
-          <li class="menu-item"><a href="{{ .URL | absURL }}" aria-current="page">{{ .Name }}</a></li>
+          <li class="menu-item">
+             <div class="dropdown">
+				  <!-- <span><a href="{{ .URL | absURL }}" aria-current="page">{{ .Name }}</a></span> -->
+				  <a href="{{ .URL | absURL }}" aria-current="page">{{ .Name }}</a>
+				  {{ if eq .Name "前沿与案例" }}
+				  <div class="dropdown-content">
+					  <p><a href="#">前沿</a></p>
+					  <p><a href="#">百科知识</a></p>
+					  <p><a href="#">案例</a></p>
+				  </div>
+				  {{ end }} 
+			  </div>
+		  </li>
           {{ end }}
         </ul>
       </nav><!-- .primary-menu-wrapper -->
