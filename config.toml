@@ -81,7 +81,7 @@ weight = 1
 
 [[menu.main]]
 name = "数据云"
-URL = "#"
+URL = "cloudata"
 weight = 2
 
 [[menu.main]]
@@ -107,6 +107,12 @@ weight = 6
 #################### default parameters ################################
 [params]
 highlightColor = ""
+
+[params.writer]
+name = "张雪华"
+image = "images/faceshot.jpg"
+description = "A clean Hugo theme for blogs emphasizing motion, material, and depth."
+
 
 [params.homepage]
 image = "images/homepage.png"
@@ -138,16 +144,10 @@ content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 button_label = "联系我们"
 button_url = "contact"
 
-<<<<<<< HEAD
 # logo
-[Params.logo]
-  image = "images/logo.png" # Logo image. Path relative to "static"
-# title = "Mainroad" # Logo title, otherwise will use site title
-# subtitle = "Just another site" # Logo subtitle
-
-
+[params.logo]
+image = "images/logo.png" 
   
-=======
 #cloud
 [params.cloud]
 enable = true
@@ -157,8 +157,6 @@ heading = "The premier destination for modern art in Northern Sweden. Open from 
 [params.Frontier]
 enable = true
 
-
->>>>>>> 1777060a337ad593d5f11ef70b51e9b865ec3ce9
 # gallery
 [params.gallery]
 enable = false

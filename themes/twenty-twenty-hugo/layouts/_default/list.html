@@ -1,24 +1,8 @@
-{{ define "main" }}
 
-<!-- useless
-<header class="archive-header has-text-align-center header-footer-group">
-	<div class="archive-header-inner section-inner medium">
-		<h1 class="archive-title"><span class="color-accent">
-				<!-- relative to the root / domain -->
-				{{ range first 2 (split .RelPermalink "/") }}
-				{{ if gt (len . ) 0 }}
-				{{  humanize (replace . "categories" "category") }}
-				{{ end }}
-				{{ end }}
-				:</span> <span class="vcard">{{ .Title }}</span></h1>
-	</div>
-</header>
--->
+{{ define "main" }} 
 
-{{ range .Pages }}
-{{/* This function is only available when applied to a single piece of content within a list context.
-render a piece of content using the content view located at /layouts/_default/post.html*/}}
-{{ .Render "post" }}
-{{ end }}
+		{{ range .Pages }}
+			{{ .Render "post" }}
+		{{ end }}
 
 {{ end }}

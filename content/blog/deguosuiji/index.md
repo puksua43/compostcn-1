@@ -1,14 +1,10 @@
 ---
-author:
-- Admin
-categories:
-- Working days
-date: "2020-03-14T15:40:24+06:00"
-description: This is meta description
-draft: false
-image: images/image-20201210135159404.png
-intro: 项目小组按：德国在履行各类国际条约以促进生物多样性、减少温室气体排放、资源回收、使用可再生能源、支持全球性永续发展等方面都处于领先地位。德国自90年代初开始重视垃圾分类和资源化利用，经过多年的政策引导和技术开发，在垃圾焚烧产能回收和可回收资源利用方面都取得了长足进步。最近十几年来尤其重视家庭有机废弃物（德国称为bio-waste）...
 title: 雪华德国随记：厨余堆肥仍占据“半壁江山”
+date: "2020-03-14"
+summary: 项目小组按：德国在履行各类国际条约以促进生物多样性,减少温室气体排放,资源回收,使用可再生能源,支持全球性永续发展等方面都处于领先地位。
+resources: 
+- name: featuredImage
+  src: image.png
 ---
 ### 雪华德国随记：厨余堆肥仍占据“半壁江山”
 
