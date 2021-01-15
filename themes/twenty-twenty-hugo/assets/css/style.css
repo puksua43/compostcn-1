@@ -315,7 +315,7 @@ h6,
 
 h1,
 .heading-size-1 {
-	font-size: 3.6rem;
+	font-size: 1.6rem;
 	font-weight: 800;
 	line-height: 1.138888889;
 }
@@ -627,7 +627,6 @@ embed,
 object {
 	display: block;
 	height: auto;
-	max-width: 100%;
 }
 
 figcaption,
@@ -1796,12 +1795,9 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 
 
 /* overwrite header css */
-{{- $highlightColor := .Site.Params.colors.highlightColor | default "#0056b3" -}}
-{{- $backgroundColor := .Site.Params.colors.backgroundcolor | default "#0056b3" -}}
-{{- $hoverFontColor := .Site.Params.colors.hoverFontColor | default "#0056b3" -}}
-
 .logo {
-	padding: 25px;
+	padding: 0;
+	background-image: url("/images/logo_bg.jpeg")
 }
 
 .logo__link {
@@ -1814,56 +1810,8 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 }
 
 .logo__img {
-	max-height: 200px;
-	max-width: 300px;
-}
-
-.logo__text {
-	text-transform: uppercase;
-}
-
-.logo--mixed .logo__item {
-	margin: .5rem auto;
-}
-
-.logo--mixed .logo__img {
-	max-width: 128px;
-	max-height: 128px;
-}
-
-.logo--mixed .logo__text {
-	padding: 0 1rem;
-}
-
-.logo__title {
-	font-size: 32px;
-	font-size: 2rem;
-	font-weight: 700;
-	line-height: 1;
-	color: #000;
-}
-
-.logo__tagline {
-	display: inline-block;
-	padding-top: 10px;
-	margin-top: 10px;
-	font-size: 14px;
-	font-size: .875rem;
-	font-weight: 700;
-	line-height: 1;
-	color: {{ $highlightColor }};
-	border-top: 1px solid #ebebeb;
-}
-
-.divider {
-	height: 5px;
-	margin: 0;
-	background: {{ $highlightColor }};
-	border: 0;
-}
-
-.menu__btn {
-	display: none;
+	max-height: 100px;
+	max-width: 581px;
 }
 
 .menu__btn {
@@ -1871,8 +1819,6 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 	width: 100%;
 	padding: 0;
 	font: inherit;
-	color: #000;
-	background: {{ $backgroundColor }};
 	border: 0;
 	outline: 0;
 }
@@ -1907,14 +1853,14 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: {{ $highlightColor }};
+	color: #d86422; 
 }
 
 .menu__list {
-	margin: 0 0 3rem 2rem;
+	margin: 0 0 2rem 2rem;
 	list-style: none;
 	/* modify nav background color  */
-	background: {{ $backgroundColor }};
+	background-color: #003152;
 }
 
 .homepage {	
@@ -1922,31 +1868,32 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__text {	
-	font-size: 15px;
+	font-size: 18px; 
 }
 
+.menu__text:hover { 
+	color: #fff;
+	border-bottom: none;
+}
+
+.menu__item { 
+	padding: 0 30px;
+	margin-top: 0;
+}
 .menu__item:hover {
-	background: {{ $backgroundColor }};
+	background-color: #d86422;
 }
 
 .menu__item:first-child {
 	border: 0;
 }
 
-.menu__item--active {
-	background: {{ $highlightColor }};
-}
-
 .menu__link {
+	font: 1.5em;
+	font-weight: bold;
 	display: block;
 	padding: 10px 15px;
-	padding: .625rem .9375rem;
-	height: 50px;
-	color: #000;
-}
-
-.menu__link:hover {
-	color: {{ $hoverFontColor }};
+	color: #fff;
 }
 
 .js .menu__list {
@@ -2012,7 +1959,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
     border-radius: 1.2rem;
     transition: transform 0.2s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.2s cubic-bezier(0.25,0.8,0.25,1);
 }
-
 
 .blog-card {
     display: flex;
@@ -2901,9 +2847,6 @@ h2.entry-title {
 	width: calc(100% - 5rem);
 }
 
-.post-inner {
-	padding-top: 5rem;
-}
 
 .reduced-spacing.missing-post-thumbnail .post-inner {
 	padding-top: 0;
@@ -4870,7 +4813,7 @@ a.to-the-top>* {
 	width: 100%;
 	height: 160px;
 	padding-top: 15px;
-	background-image: url("/images/ft_bg.jpg") no-repeat;
+	background-image: url("/images/ft_bg.jpg");
 	background-size: 100%;
 }
 
@@ -4879,8 +4822,12 @@ a.to-the-top>* {
 	height: 100px;
 }
 
+.footer-ul li { 
+	color: #fff;
+}
+
 .footer-ul a {	
-	color: #000000;
+	color: #fff;
 	font-size: 12px;
 }
 
@@ -4968,37 +4915,13 @@ a.to-the-top>* {
 	.wp-block-gallery.alignright {
 		max-width: 26rem;
 	}
-
-/* new-gallery */
-	.new-gallery {	
-		width: calc((100% - 32px) / 3);
-		list-style-type: none;
-		float: left;
-		display: inline;
+	/* BLOCK: TABLE WIDTH */
+	.wp-block-table.alignleft,
+	.wp-block-table.alignright {
+		max-width: 100%;
 	}
 
-	.img-group {	
-		position: relative;
-		display: inline-block;
-		width: 300px;
-	}
-
-	.img-tip {	
-		position: absolute;
-		bottom: 0;
-	    background: #333;
-	    color: #fff;
-	    opacity: 0.6;
-	    display: none;
-	}
-
-	.img-group:hover .img-tip {
-		display: block;
-	    width: 100%;
-		text-align: center;
-	}	
-
-  /* cloud */
+  /*  cloud data and frontier */
   .cloud-grid{
 	  height: 300px; 
 	  padding: 0; 
@@ -5007,29 +4930,71 @@ a.to-the-top>* {
   
   .cloud-grid .photo{
     float: left; 
-    width: 40%; 
-    max-height: 300px;
+  }
+
+  .cloud-grid .photo img { 
+	width: 400px;
+	height: 300px;
   }
 
   .cloud-grid .intro{
     float: right; 
     width: 50%; 
     padding-bottom: 10rem;
+	font-size: 17px;
   }
 
-	/* BLOCK: TABLE WIDTH */
-	.wp-block-table.alignleft,
-	.wp-block-table.alignright {
-		max-width: 100%;
+  .cloud-grid .intro h3 a { 
+	  color: #495784;
+  }
+
+	.carousel-inner img {
+	   width: 100%;
+	   height: 100%;
 	}
 
-  /* Frontier */
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
-  
-  
+	.Frontier{
+	   display: block;
+	   background-color:#F2F2F2;
+	   margin-bottom: 0;
+	}
+
+	.wrap {
+	   text-align:center;
+	   font-family:Georgia;
+	   font-size:80px;
+		
+	} 
+
+	.Frontier_list{
+		margin:0 20rem;
+	}
+
+	.Frontier_list ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	  
+	.Frontier_list li{
+		display: inline;   
+	}
+
+	#list li.sel {
+		/* duifeiketang */
+		background-color: #d86422;
+		border-radius: 32px;
+	}
+
+	#box div {
+		background-color: #eee;
+		height: 300px;
+		text-indent: 4rem;
+	}
+
+	#box div:not(:first-child) {
+		display: none;
+	}
 	/* Entry Content ------------------------- */
 
 	/* ALIGNMENT CLASSES */
@@ -5512,7 +5477,7 @@ a.to-the-top>* {
 	}
 
 	h2.entry-title {
-		font-size: 6.4rem;
+		font-size: 3.8rem;
 	}
 
 	/* SEARCH RESULTS */
@@ -5570,7 +5535,7 @@ a.to-the-top>* {
 	}
 
 	.post-inner {
-		padding-top: 8rem;
+		padding-top: 1rem;
 	}
 
 	/* POST FOOTER */
@@ -6005,7 +5970,6 @@ a.to-the-top>* {
 
 	.footer-top-visible .footer-nav-widgets-wrapper,
 	.footer-top-hidden #site-footer {
-		margin-top: 8rem;
 	}
 
 	/* FOOTER TOP */
@@ -6735,7 +6699,10 @@ a.to-the-top>* {
 	.footer-social a::before {
 		font-size: 2rem;
 	}
-
+	
+	.footer { 
+		margin-top: 0;
+	}
 	/* FOOTER WIDGETS */
 
 	.footer-widgets-wrapper {

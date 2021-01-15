@@ -1,11 +1,3 @@
-
-  <div class="footer-inner section-inner">
-    <div class="footer-top has-social-menu">
-      <nav aria-label="Social links" class="footer-social-wrapper">
-        {{partial "social.html" .}}
-      </nav>
-    </div><!-- .footer-top -->
-
 	{{ if .Site.Params.footer.enable }}
     {{ with .Site.Params.footer }}
     <aside class="footer-widgets-outer-wrapper" role="complementary">
@@ -37,16 +29,10 @@
     {{ end }}
 
 
-
-  </div><!-- .footer-inner -->
-
-</div><!-- .footer-nav-widgets-wrapper -->
-
-
 <footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 	<!-- 链接 -->
-	<div class="lianjie">
+	<a name="about"><div class="lianjie"></a>
 		<h3 class="content3_title">
 			<div class="title_name">友情链接</div>
 		</h3>
@@ -64,47 +50,35 @@
       <div class="footer-ul">
         <ul class="u1 fl">
           <li>走进研究院</li>
-          <li><a href="/zjyjy/index.html">院况介绍</a></li>
-          <li><a href="/zjyjy/index.html">组织机构</a></li>
-          <li><a href="/zjyjy/index.html">重点实验室</a></li>
+          <li><a href="https://liee.nju.edu.cn/zjyjy/zzjg7408/index.html">院况介绍</a></li>
+          <li><a href="https://liee.nju.edu.cn/zjyjy/zzjg7408/index.html">组织机构</a></li>
+          <li><a href="https://liee.nju.edu.cn/zjyjy/zzjg7408/index.html">重点实验室</a></li>
         </ul>
         <ul class="u2 fl">
           <li>信息公开</li>
-          <li><a href="/xxgk/zhxw/index.html">综合新闻</a></li>
-          <li><a href="/xxgk/tzgg/index.html">通知公告</a></li>
-          <li><a href="/xxgk/whjs/index.html">文化建设</a></li>
+          <li><a href="https://liee.nju.edu.cn/xxgk/zhxw/index.html">综合新闻</a></li>
+          <li><a href="https://liee.nju.edu.cn/xxgk/tzgg/index.html">通知公告</a></li>
+          <li><a href="https://liee.nju.edu.cn/xxgk/whjs/index.html">文化建设</a></li>
         </ul>
         <ul class="u3 fl">
           <li>技术服务</li>
-          <li><a href="/jsfw/jsfx/index.html">技术方向</a></li>
-          <li><a href="/jsfw/jscg/index.html">技术成果</a></li>
-          <li><a href="/jsfw/jjfa/index.html">解决方案</a></li>
+          <li><a href="https://liee.nju.edu.cn/jsfw/jsfx/index.html">技术方向</a></li>
+          <li><a href="https://liee.nju.edu.cn/jsfw/jsfx/index.html">技术成果</a></li>
+          <li><a href="https://liee.nju.edu.cn/jsfw/jjfa/index.html">解决方案</a></li>
         </ul>
         <ul class="u4 fl">
           <li>创新合作</li>
-          <li><a href="/cxhz/xsjl/index.html">学术交流</a></li>
-          <li><a href="/cxhz/gnhz/index.html">国内合作</a></li>
-          <li><a href="/cxhz/jwhz/index.html">境外合作</a></li>
+          <li><a href="https://liee.nju.edu.cn/cxhz/xsjl/index.html">学术交流</a></li>
+          <li><a href="https://liee.nju.edu.cn/cxhz/gnhz/index.html">国内合作</a></li>
+          <li><a href="https://liee.nju.edu.cn/cxhz/jwhz/index.html">境外合作</a></li>
         </ul>
       </div>
-        <div class="footer" style="float: left; width:700px;">
-            
-            <p style="display: inline-flex;">版权所有：南京大学（溧水）生态环境研究院</p><p style="margin-left: 10px;display: inline-flex;">备案序号：05031605号</p> <p style="margin-left: 10px;display: inline-flex;">地址：江苏省南京市溧水区秦淮大道288号</p>  <p></p> 
-        </div>
     </div>
+	<div class="footer" style="float: left; width:700px;">
+		<p style="display: inline-flex; margin-left: 32px">版权所有：南京大学（溧水）生态环境研究院</p><p style="margin-left: 40px;display: inline-flex;">备案序号：05031605号</p> <p style="margin-left: 10px;display: inline-flex;">地址：江苏省南京市溧水区秦淮大道288号</p>  <p></p> 
+	</div>
 </div>
 
-  <div class="section-inner">
-    <div class="footer-credits">
-      <p class="footer-copyright">{{ .Site.Params.footer.copyright | markdownify }}</p><!-- .powered-by-wordpress -->
-    </div><!-- .footer-credits -->
-    <a class="to-the-top" href="#site-header">
-      <span class="to-the-top-long">
-        To the top <span class="arrow" aria-hidden="true">&uarr;</span> </span><!-- .to-the-top-long -->
-      <span class="to-the-top-short">
-        Up <span class="arrow" aria-hidden="true">&uarr;</span> </span><!-- .to-the-top-short -->
-    </a><!-- .to-the-top -->
-  </div><!-- .section-inner -->
 </footer>
 
 

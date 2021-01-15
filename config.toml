@@ -36,62 +36,25 @@ author = "author"
 
 ############################## navigation ###############################
 
-# main menu
-[[menu.desktop]]
-name = "首页"
-URL = "/"
-weight = 1
-
-[[menu.desktop]]
-name = "平台介绍"
-URL = "introduce"
-weight = 2
-
-[[menu.desktop]]
-name = "可视化"
-URL = "visual"
-weight = 3
-
-[[menu.desktop]]
-name = "数据云"
-URL = "clouddata"
-weight = 4
-
-[[menu.desktop]]
-name = "雪华说"
-URL = "blog"
-weight = 5
-
-[[menu.desktop]]
-name = "前沿与案例"
-URL = "preface"
-weight = 6
-
-[[menu.desktop]]
-name = "论坛"
-URL = "forum"
-weight = 7
-
-
 ####### menu.main #######
 [[menu.main]]
-name = "homepage"
+name = "主页"
 URL = "/"
 weight = 1
 
 [[menu.main]]
 name = "数据云"
-URL = "cloudata"
+URL = "/cloudata"
 weight = 2
 
 [[menu.main]]
 name = "雪华说"
-URL = "/blog"
+URL = "#xuehua"
 weight = 3
 
 [[menu.main]]
 name = "前沿动态"
-URL = "#"
+URL = "/preface"
 weight = 4
 
 [[menu.main]]
@@ -101,7 +64,7 @@ weight = 5
 
 [[menu.main]]
 name = "关于我们"
-URL = "/about"
+URL = "about"
 weight = 6
 
 #################### default parameters ################################
@@ -124,7 +87,7 @@ hoverFontColor = "#7298f4"
 
 # cookies
 [params.cookies]
-enable = true
+enable = false
 expire_days = 2
 
 # banner
@@ -136,14 +99,6 @@ image = "images/2020-landscape-1-2.png"
 # [params.blog]
 # heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
 
-# call to action
-[params.call_to_action]
-enable = false
-title = "联系我们获取更多信息。"
-content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
-button_label = "联系我们"
-button_url = "contact"
-
 # logo
 [params.logo]
 image = "images/logo.png" 
@@ -153,26 +108,23 @@ image = "images/logo.png"
 enable = true
 heading = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
 
+# 轮播 
+[params.carousel]
+enable = true
+
+[[params.carousel.item]]
+title = "first item"
+description = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months." 
+image = "images/preface1.png" 
+
+[[params.carousel.item]]
+title = "second item"
+description = "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+image = "images/preface2.png" 
+
 #Frontier_case
 [params.Frontier]
 enable = true
-
-# gallery
-[params.gallery]
-enable = false
-
-[[params.gallery.gallery_item ]]
-image = "images/2020-square-2.png"
-
-
-[[params.gallery.gallery_item ]]
-image = "images/2020-square-1.png"
-
-[[params.gallery.gallery_item ]]
-image = "images/2020-square-1.png"
-
-[[params.gallery.gallery_item ]]
-image = "images/2020-square-1.png"
 
 # footer
 [params.footer]
@@ -212,11 +164,3 @@ name = "中国环境科学协会"
 URL = "http://www.chinacses.org/"
 weight = 6
 
-############################# social site ########################
-# [params.social]
-# yelp = "#"
-# facebook = "#"
-# twitter = "#"
-# instagram = "#"
-# email = "#"
-# linkedin = "#"

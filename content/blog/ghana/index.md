@@ -1,17 +1,15 @@
 ---
+author: ["张雪华",]
 title: 他山之石可以攻玉-做个Ghana学堆肥
-date: "2020-03-14T15:40:24+06:00"
-image: /images/image-20201210095431698.png
+date: "2020-03-14"
 summary: 雪华说：Ghana是我们目前看到的未借助外来动力、透气性最好的堆肥设施之一，在此首先感谢印度堆肥专家Vasuki授权我们无偿使用和推广其设计。
 resources:
 - name: featuredImage
   src: image.png
 ---
-### 他山之石可以攻玉-做个Ghana学堆肥
-
 雪华说：Ghana是我们目前看到的未借助外来动力、透气性最好的堆肥设施之一，在此首先感谢印度堆肥专家Vasuki授权我们无偿使用和推广其设计。通过一年多的实践和实验，我们项目组摸索出了一系列操作规范，就一个Ghana堆肥箱而言，在连续每天添加全厨余（50公斤左右）、不翻堆的前提下，基本做到无渗滤液、无蚊虫、无异味，堆肥成品品质检测结果良好。连续添加且具备一定规模的社区厨余堆肥，需要对堆肥过程进行科学、规范的管理，开展堆肥产品定期检测，合理施用堆肥产品，以便实现社区堆肥的可持续发展。只要掌握堆肥的基本原理，就能科学、灵活的操作和管理，欢迎大家留言或来信分享自己的堆肥实践和经验。
 
-<img src="/images/image-20201210095431698.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095431698.png" style=" height: 300px" align="middle"/>
 
 图片摄于2019年12月，中国社区厨余堆肥试点项目组前往印度考察学习，图右一为项目组外聘专家和Ghana堆肥箱设计者Vasuki先生，图左一为堆肥微生物学专家Joshy博士。
 
@@ -37,11 +35,11 @@ Vasuki Iyengar决定放弃高薪IT工作
 
 提供社区堆肥设计和日常管理指导
 
-<img src="/images/image-20201210095506477.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095506477.png" style=" height: 300px" align="middle"/>
 
 早在2018年8月，中国社区厨余堆肥试点项目负责人张雪华博士及万科公益基金会王石先生等一行人就前往班加罗尔市，考察厨余分散式处理技术和管理模式，Vasuki先生当时为基金会展示了Ghana的“千姿百态”。
 
-<img src="/images/image-20201210095521787.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095521787.png" style=" height: 300px" align="middle"/>
 
 初期2种Ghana堆肥箱
 
@@ -55,7 +53,7 @@ Vasuki Iyengar决定放弃高薪IT工作
 
 设施需要放置在屋檐下
 
-<img src="/images/image-20201210095538145.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095538145.png" style=" height: 300px" align="middle"/>
 
 第2种，周身为绿色钢（铁）丝网
 
@@ -63,15 +61,15 @@ Vasuki Iyengar决定放弃高薪IT工作
 
 室内室外均可放置
 
-<img src="/images/image-20201210095557391.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095557391.png" style=" height: 300px" align="middle"/>
 
 #### **Ghana在中国的故事**
 
 2019年初，Vasuki成为中国社区厨余堆肥试点项目（一期）外聘专家，为我们带来了专业、实用、便捷的堆肥实践经验，也带来了升级版的Ghana。
 
-<img src="/images/image-20201210095618632.png" style="width: 700px; height: 150px" align="middle"/>
+<img src="/images/image-20201210095618632.png" style="height: 150px" align="middle"/>
 
-<img src="/images/image-20201210095628170.png" style="width: 500px; height: 200px" align="middle"/>
+<img src="/images/image-20201210095628170.png" style="height: 200px" align="middle"/>
 
 Ghana堆肥箱
 
@@ -89,7 +87,7 @@ Ghana堆肥箱
 
 #### **Ghana在研究院的故事**
 
-<img src="/images/image-20201210095657786.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095657786.png" style=" height: 300px" align="middle"/>
 
 Ghana堆肥操作-连续添加厨余
 
@@ -149,7 +147,7 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 
    I：预计21天装满一半的堆肥箱，这是考虑了厨余降解带来的堆体高度下降；如果一次性堆满半箱，总处理量按箱体容量的60%计算。
 
-<img src="/images/image-20201210095733258.png" style="width: 500px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095733258.png" style="height: 300px" align="middle"/>
 
 钙与氮、磷、钾一起称为“肥料的四要素”，也是微生物必要营养物质之一。
 
@@ -157,14 +155,14 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 
 <span style='color:green;background:背景颜色;font-size:文字大小;font-family:字体;'>**Ghana堆肥第一轮：2019.7.12-2019.9.26**</span>
 
-<img src="/images/image-20201210095808533.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095808533.png" style=" height: 300px" align="middle"/>
 
 - 2019.7.12-2019.8.1每日连续添加厨余50kg左右
 - 总共添加厨余585.86kg，椰渣286.98kg
 
 <span style='color:green;background:背景颜色;font-size:文字大小;font-family:字体;'>**Ghana堆肥第五轮：2020.7.9-至今**</span>
 
-<img src="/images/image-20201210095857360.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210095857360.png" style=" height: 300px" align="middle"/>
 
 - 2020.7.9-2020.7.30每日连续添加厨余30kg左右
 - 总共添加厨余385.05kg，成熟肥+木屑256.15kg
@@ -176,14 +174,14 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 - 每天连续添加厨余，发酵期间堆体每天下降2cm
 - 一次性加满厨余，开始堆肥1周左右，堆体高度下降至70%；一月内，堆体下降至60%左右。
 
-<img src="/images/image-20201210095944145.png" style="width: 700px; height: 200px" align="middle"/>
+<img src="/images/image-20201210095944145.png" style="height: 200px" align="middle"/>
 
 ##### 2.堆体湿度：堆肥开始3天后，需要密切关注湿度
 
 - 在合适的条件下，厨余一般在2-3天后开始降解，生厨余一般4-7天完全消失不见，此时堆体湿度也急剧加大。
 - 如果添加干物质较少或干物质吸水性较差，堆体出现厌氧，易产生异臭，妨碍堆体温度的升高，（如果底部铺设干物质较少或阻水性较差（如木屑），堆体易出现大量渗滤液的滴漏）。
 
-<img src="/images/image-20201210100001743.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210100001743.png" style=" height: 300px" align="middle"/>
 
 ##### 3.黑水虻和苍蝇：堆体湿度是关键
 
@@ -191,7 +189,7 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 - 如果堆体湿度较高，容易产生异味，苍蝇和黑水虻成虫易被气味吸引，由于堆体温暖湿润（湿度>70%）、有机营养丰富，很适合产卵。它们的产卵能力相当强，一只成虫产卵可以高达上千只，如果不及时处理，会越来越多，形成恶性循环。
 - 新手在第一次尝试堆肥时，很难避免黑水虻和苍蝇的产生。如果第一次堆肥时把握好湿度，在保持堆体湿度适合厨余降解的前提下，同时逐渐将堆体湿度降低到不适宜黑水虻幼虫和蝇蛆生存的程度，这些蚊虫会慢慢自动消失。
 
-<img src="/images/image-20201210100024063.png" style="width: 600px; height: 300px" align="middle"/>
+<img src="/images/image-20201210100024063.png" style="height: 300px" align="middle"/>
 
 堆体中出现虫子怎么办？
 
@@ -206,7 +204,7 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 - 堆体持续高温一定时间是实现堆肥安全无害化的有力保障之一。试验发现，堆体升温速度与堆体大小有关。每天连续添加30kg厨余，堆体6天后升温至55℃以上；每天添加50kg，堆体3天后升温至55℃以上；一次性添加150kg厨余，堆体2天后升温至60℃以上。
 - 无论何种堆肥方式，Ghana堆肥时，堆体上层、中层、下层都可以上升到55℃以上，并维持7~10天。
 
-<img src="/images/image-20201210105906814.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210105906814.png" style=" height: 300px" align="middle"/>
 
 
 
@@ -226,13 +224,13 @@ H：EM菌要提前一周激活，椰渣要提前一天泡发，椰砖可以晾�
 
 堆肥产品经过筛分后全部用于研究院堆肥种植示范基地，室内室外各色绿植、花卉、蔬菜在堆肥产品的滋养下茁壮成长。
 
-<img src="/images/image-20201210110125321.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210110125321.png" style=" height: 300px" align="middle"/>
 
 
 
 同样，依照“食物（产品）-有机残渣-堆肥化处理-堆肥产品-土壤改良和营养”资源化路径，分类后的厨余垃圾通过社区堆肥能实现变废为宝和资源循环，堆肥产品用于社区内部土壤改良、社区绿化或发展一米菜园等，形成有机物质的闭合循环链。
 
-<img src="/images/image-20201210100227796.png" style="width: 400px; height: 300px" align="middle"/>
+<img src="/images/image-20201210100227796.png" style=" height: 300px" align="middle"/>
 
 实际上，无论是社区堆肥欣欣向荣的印度，还是社区堆肥遍地开花的欧洲国家，社区堆肥都同样面临“物业不爱”和“居民反感”的问题，但是各国都结合实际开发了极具本土特色的模式，走进社区，走近居民。社区堆肥俨然已在国际范围内成为技术成熟、应用广泛的厨余垃圾处理方式之一。
 

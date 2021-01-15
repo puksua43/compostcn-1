@@ -1,27 +1,12 @@
-<!-- 
-	<div class="container" style="height: 400px; padding: 5rem 5% 0 5%;">
-	<div class="photo" >
-		<img src="{{ .Params.Image | absURL }}" style="float: left; width: 40%; max-height: 300px;">
-	</div>
-	<div class="intro" style="float: right; width: 50%; padding-bottom: 10rem;">
-		<a href={{.Permalink}} style="color: black;">
-			<h3 style="font-size: 25px; margin: 0 0 3rem 0; border-bottom-style: groove; border-bottom-width: 5px;">{{ .Params.Title }}</h3>
-		</a>
-		<p>{{ .Params.Intro }}</p>
-	</div>
-	</div>
--->
-
-
-<a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+<a ontouchstart="cardpressed.call(this)" ontouchend="cardreleased.call(this)" ontouchmove="cardreleased.call(this)" 
   href="{{ .Permalink }}" class="card blog-card" rel="bookmark" >
-  {{ with .Resources.GetMatch "featuredImage" }}
+  {{ with .Resources.GetMatch "featuredimage" }}
   <div class="card-img-container">
     <picture>
-	<!-- .Resize .Fill smart -->
-      {{ $thumbnail := .Fit "600x500 Lanczos" }}
+	<!-- .resize .fill smart -->
+      {{ $thumbnail := .Resize "500x250" }}
       <source srcset="{{ $thumbnail.Permalink }}">
-	  <img src="{{ $thumbnail.Permalink }}" class="card-img"/>
+	  <img src="{{ $thumbnail.Permalink }}" class="card-img" style="min-height: 80px"/>
     </picture>
   </div>
   {{- end }}
@@ -29,7 +14,7 @@
     <h2 class="card-title">{{ .Title }}</h2>
     <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}</p>
     <div class="card-subtext muted-text">
-      <p>Posted: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
+      <p>Posted: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "jan 2, 2006" }}</time></p>
     </div>
   </article>
 </a>

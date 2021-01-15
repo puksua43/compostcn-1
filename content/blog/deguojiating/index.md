@@ -1,4 +1,5 @@
 ---
+author: ["张雪华",]
 title: 德国家庭堆肥：自家厨余，自己负责，践行循环经济
 date: "2020-03-14"
 summary: 雪华说：自家厨余，自己堆肥，自行使用，是否就可以完全的随心所欲呢？在德国，政府倡导人们成为负责任的家庭堆肥实践者。
@@ -6,8 +7,6 @@ resources:
 - name: featuredImage
   src: image.png 
 ---
-### 德国家庭堆肥：自家厨余，自己负责，践行循环经济
-
 #### **德国家庭堆肥指南**
 
 
@@ -52,8 +51,8 @@ resources:
 - 适销性
 
 <table><tr>
-<td><img src="/images/image-20201210090821122.png" style="width: 300px; height: 200px" align="right" border=0/><td>
-<td><img src="/images/image-20201210090832196.png" style="width: 300px; height: 200px" align="left" border=0/></td>
+<td><img src="/images/image-20201210090821122.png" style="height: 200px" align="right" border=0/><td>
+<td><img src="/images/image-20201210090832196.png" style="height: 200px" align="left" border=0/></td>
 </tr></table>
 
 总的来说，不少欧洲国家都鼓励家庭堆肥，除德国之外，还有奥地利、比利时、芬兰、法国、意大利、荷兰、西班牙、瑞士、瑞典、英国等国家。
@@ -132,13 +131,17 @@ resources:
 
 （10）堆肥产品应用：家庭堆肥产品一般都是自家使用：长期使用堆肥产品能够给土壤提供与商业肥料相当的养分，但要注意补充氮肥和钾肥，保证养分充足。
 
-<table frame=void ><tr>
-<td><img src="/images/image-20201210091530729.png" style="width: 300px; height: 200px" align="right" border=0/><td>
-<td><img src="/images/image-20201210091541238.png" style="width: 300px; height: 200px" align="left" border=0/></td>
-</tr></table>
-《德国家庭堆肥指南》中文译本由“中国厨余堆肥试点项目组”组织编译，这本德国环境署(UBA) 2015年再版的《家庭堆肥指南》，不仅针对具备环保意识的德国市民，还为相关政策制定者提供建议。本指南的指导思想是鼓励居民负责任、规范地进行家庭堆肥管理。扫描下方二维码输入**提取码**cccp即可自行下载阅读。
+<table frame=void >
+<tr>
+<td><img src="/images/image-20201210091530729.png" style="height: 200px" align="right" border=0/><td>
+<td><img src="/images/image-20201210091541238.png" style="height: 200px" align="left" border=0/></td>
+</tr>
+</table>
+《德国家庭堆肥指南》中文译本由“中国厨余堆肥试点项目组”组织编译，这本德国环境署(UBA) 
+2015年再版的《家庭堆肥指南》，不仅针对具备环保意识的德国市民，还为相关政策制定者提供建议。
+本指南的指导思想是鼓励居民负责任、规范地进行家庭堆肥管理。扫描下方二维码输入**提取码**cccp即可自行下载阅读。
 
-<img src="/images/image-20201210091729164.png" style="width: 300px; height: 300px" align="middle"/>
+<img src="/images/image-20201210091729164.png" style="width: 200px; height: 200px" align="middle"/>
 
 ##### **结束语**
 
@@ -147,10 +150,10 @@ resources:
 
 德国人的饮食习惯、居住状况和垃圾管理思维都与中国有不同之处，这本家庭堆肥指南的使用需要放在国内情况下参考、借鉴。我们希望中国读者能够举一反三，根据实际情况进行调整，避免生硬套用给定的模式。
 
-<span style='color:pink;background:背景颜色;font-size:文字大小;font-family:字体;'>**关于我们**</span>
+<span style='color:black;'>**关于我们**</span>
 
 南京大学（溧水）生态环境研究院是南京大学与南京市溧水区人民政府共同创办的独立法人事业单位，是社会公益性环境保护科学研究机构，主要从事具有引领性、创新性、基础性生态环境保护科学研究和成果应用转化。
 
 研究院旨在打造国内领先、国际一流的“环境科技创新平台、高端环保人才聚集平台、环保科研成果转化平台、国际交流与合作平台”。自成立以来，研究院在有机固废资源化技术与装备、绿色产品生命周期设计与评价、环境大数据平台技术、大气环境研究等方向取得一系列原创性成果。研究院网址：https://liee.nju.edu.cn
 
-<img src="/images/image-20201210091729164.png" style="width: 300px; height: 300px">
+<img src="/images/image-20201210091729164.png" style="width: 200px; height: 200px">

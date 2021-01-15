@@ -7,8 +7,6 @@ resources:
 - name: featuredImage
   src: image.png
 ---
-### 雪华印度随记：再次感受分散式厨余堆肥的迷人魅力
-
 #### **中国厨余堆肥试点项目组印度学习考察记**
 
 
@@ -32,36 +30,36 @@ Aaga是一种密封式好氧堆肥设施，因其造型美观、箱体黄绿相�
 
 
 
-<img src="images/image-20201210141241464.png" alt="image-20201210141241464" style="zoom: 33%;" /><img src="images/image-20201210141257104.png" alt="image-20201210141257104" style="zoom:33%;" />
+<img src="/images/image-20201210141241464.png" alt="image-20201210141241464" style="zoom: 33%;" /><img src="/images/image-20201210141257104.png" alt="image-20201210141257104" style="zoom:33%;" />
 
 近年来，班加罗尔市涌现了各种各样的堆肥设施，当地社区可以因地制宜，根据自己小区的具体情况设计和选择合适的堆肥方式及设施。下图蓝色堆肥框价格低廉，是最早出现的简易堆肥设施。我们走访的小区有1300多户居民，他们将整整1000个堆肥框整齐放置在7排铁架上，通过蓝色堆肥框（8~10天）+继续堆肥池（10~20天）+腐熟框（10~15天）完成发酵腐熟流程，每天处理近1吨的厨余和社区园林垃圾。堆肥产品主要用于小区绿化，也卖给附近农民。
 
 为了加快堆肥降解和成熟过程，也是为了方便管理和提高堆肥产品质量，堆肥过程使用粉碎机将堆肥材料进行了两次粉碎，一次是厨余垃圾加入蓝色堆肥框之前，一次是由堆肥框转入堆肥池之前。该社区使用这种蓝色堆肥框已有近6年，期间产生了很多的问题，比如堆肥湿度、蚊虫滋生等。通过不断摸索和尝试，目前这些问题已经得到妥善的解决，形成了一套成熟有效的管理模式。
 
-<img src="images/image-20201210141605024.png" alt="image-20201210141605024" style="zoom: 33%;" /><img src="images/image-20201210141819651.png" alt="image-20201210141819651" style="zoom: 67%;" />
+<img src="/images/image-20201210141605024.png" alt="image-20201210141605024" style="zoom: 33%;" /><img src="/images/image-20201210141819651.png" alt="image-20201210141819651" style="zoom: 67%;" />
 
-<img src="images/image-20201210141618950.png" alt="image-20201210141618950" style="zoom: 50%;" /><img src="images/image-20201210141632546.png" alt="image-20201210141632546" style="zoom:50%;" />
+<img src="/images/image-20201210141618950.png" alt="image-20201210141618950" style="zoom: 50%;" /><img src="/images/image-20201210141632546.png" alt="image-20201210141632546" style="zoom:50%;" />
 
 
 家庭堆肥
 
 根据家庭条件和场地大小，可以选择不同材料和处理容量的堆肥设施。设施一般放于花园和阳台，成熟肥主要用于家庭室内绿植和阳台花园养护。
 
-<img src="images/image-20201210141934472.png" alt="image-20201210141934472" style="zoom: 80%;" />
+<img src="/images/image-20201210141934472.png" alt="image-20201210141934472" style="zoom: 80%;" />
 
-<img src="images/image-20201210141959672.png" alt="image-20201210141959672" style="zoom:80%;" />
+<img src="/images/image-20201210141959672.png" alt="image-20201210141959672" style="zoom:80%;" />
 
 路边堆肥
 
 路边堆肥由当地环保组织发起（最早使用的是Vasuki设计的树叶堆肥框Shishira）、选点和实施，堆肥设施放置在街道上、位于居民家庭门前。班加罗尔市政府BBMP（Bruhat Bengaluru Mahanagara Palike）垃圾收运人员每天负责收集和堆肥，堆肥箱附近的居民家庭监督堆肥箱的使用和管理。目前，班加罗尔的路边堆肥设施已有120个左右。
 
-<img src="images/image-20201210142028126.png" alt="image-20201210142028126" style="zoom: 33%;" />![image-20201210142057231](images/image-20201210142057231.png)<img src="images/image-20201210142028126.png" alt="image-20201210142028126" style="zoom: 33%;" />![image-20201210142057231](images/image-20201210142057231.png)
+<img src="/images/image-20201210142028126.png" alt="image-20201210142028126" style="zoom: 33%;" /><img src="/images/image-20201210142028126.png" alt="image-20201210142028126" style="zoom: 33%;" />
 
 树叶堆肥
 
 树叶堆肥框主要以Shishira为主，绿色的堆肥框放置在公园里或社区绿地的大树下面，就地处理园林和厨余垃圾（以园林垃圾为主）。堆肥框与自然景观融为一体，相得益彰。
 
-<img src="images/image-20201210142133102.png" alt="image-20201210142133102" style="zoom:33%;" />![image-20201210142146973](images/image-20201210142146973.png)<img src="images/image-20201210142133102.png" alt="image-20201210142133102" style="zoom:33%;" />![image-20201210142146973](images/image-20201210142146973.png)
+<img src="/images/image-20201210142133102.png" alt="image-20201210142133102" style="zoom:33%;" /><img src="images/image-20201210142133102.png" alt="image-20201210142133102" style="zoom:33%;" />
 
 ##### **第二站：喀拉拉邦Kunnamkulam**
 
@@ -71,9 +69,9 @@ Aaga是一种密封式好氧堆肥设施，因其造型美观、箱体黄绿相�
 
 堆肥组负责对每天大约3吨的商铺餐厨、少量家庭厨余和屠宰场废弃物进行条垛式堆肥处理，添加的干物质（堆肥调节物质）主要为无菌椰渣和带菌椰渣，以无菌椰渣为主。堆肥周期为40天左右。堆肥过程的主要管理指标是堆体湿度（手握法监测堆体湿度）和温度（测量）。现场考察发现，已经堆肥4周的堆体基本没有异味，堆体上有少许苍蝇，整个堆肥场地异味不重。堆肥产品经过7毫米筛网，过筛后大颗粒物质继续堆肥。小颗粒物质按需加入氮、磷、钾等营养物质，作为有机肥出售。
 
-<img src="images/image-20201210142253140.png" alt="image-20201210142253140" style="zoom:33%;" />![image-20201210142306274](images/image-20201210142306274.png)<img src="images/image-20201210142253140.png" alt="image-20201210142253140" style="zoom:33%;" />![image-20201210142306274](images/image-20201210142306274.png)
+<img src="/images/image-20201210142253140.png" alt="image-20201210142253140" style="zoom:33%;" />
 
-<img src="images/image-20201210142328151.png" alt="image-20201210142328151" style="zoom:33%;" />![image-20201210142339200](images/image-20201210142339200.png)<img src="images/image-20201210142328151.png" alt="image-20201210142328151" style="zoom:33%;" />![image-20201210142339200](images/image-20201210142339200.png)
+<img src="/images/image-20201210142328151.png" alt="image-20201210142328151" style="zoom:33%;" />
 
 ##### **第三站：喀拉拉邦 阿勒皮**
 
@@ -83,23 +81,23 @@ Aaga是一种密封式好氧堆肥设施，因其造型美观、箱体黄绿相�
 
 堆肥添加的干物质主要是干树叶（未破碎），喷洒的菌液为牛粪中筛出的微生物提取液，堆肥周期90天左右，成熟肥主要供附近居民或农民使用。
 
-<img src="images/image-20201210142524403.png" alt="image-20201210142524403" style="zoom: 33%;" /><img src="images/image-20201210142541567.png" alt="image-20201210142541567" style="zoom:33%;" />
+<img src="/images/image-20201210142524403.png" alt="image-20201210142524403" style="zoom: 33%;" /><img src="/images/image-20201210142541567.png" alt="image-20201210142541567" style="zoom:33%;" />
 
-<img src="images/image-20201210142603442.png" alt="image-20201210142603442" style="zoom: 33%;" /><img src="images/image-20201210142617185.png" alt="image-20201210142617185" style="zoom: 33%;" /><img src="images/image-20201210142745689.png" alt="image-20201210142745689" style="zoom:33%;" />
+<img src="/images/image-20201210142603442.png" alt="image-20201210142603442" style="zoom: 33%;" /><img src="/images/image-20201210142617185.png" alt="image-20201210142617185" style="zoom: 33%;" /><img src="/images/image-20201210142745689.png" alt="image-20201210142745689" style="zoom:33%;" />
 
 阿勒皮面临的最大挑战是运河污染及治理，而垃圾问题是其中非常重要的一环。家庭和社区堆肥作为一种经济有效的垃圾资源化利用方式，得到了该邦财政大臣Thomas Issac 博士的大力支持，通过财政补贴堆肥设施，极大地推动了该地垃圾分类和厨余堆肥的发展。
 
-<img src="images/image-20201210142825683.png" alt="image-20201210142825683" style="zoom: 33%;" /><img src="images/image-20201210142835846.png" alt="image-20201210142835846" style="zoom: 33%;" />
+<img src="/images/image-20201210142825683.png" alt="image-20201210142825683" style="zoom: 33%;" /><img src="/images/image-20201210142835846.png" alt="image-20201210142835846" style="zoom: 33%;" />
 
 ##### **第四站：Jalahobli Taluk**
 
  Jalahobli Taluk (Taluk在印度是一个由多个乡村联合治理的行政单元)是班加罗尔市周边的一个乡村地区，垃圾分类主要通过当地NGO和垃圾管理社会企业共同实施。每天垃圾收运车定时上门收集厨余、可回收和不可回收3类垃圾，每村分2条收运路线，每条路线配备1辆收运车，每车配备2名工作人员。收集人员在现场通过扫描二维码上传照片，同时在线针对居民的垃圾分类情况进行评价打分，居民也可以对收运工作人员进行线上评价。收集的厨余垃圾运往附近的农场进行堆肥，该农场由当地NGO运行。垃圾收运和干垃圾二次分拣由社会企业完成。
 
-<img src="images/image-20201210142932573.png" alt="image-20201210142932573" style="zoom: 80%;" />
+<img src="/images/image-20201210142932573.png" alt="image-20201210142932573" style="zoom: 80%;" />
 
 人口快速增长、工业化和城市化进程、缺乏废弃物处理基础设施，这些都给印度解决垃圾污染问题带来了巨大的挑战，但印度人一直在努力探索属于自己的废弃物处理之路。本次考察走访了多个城市和乡村，不仅亲眼看到多种分散式厨余堆肥设施和技术方法，同时也对各地政府、NGO和居民多方协商合作，因地制宜，摸索出适合当地情况的垃圾分类和分散式处理模式有了初步了解。如果印度蓬勃发展的分散式厨余堆肥模式和管理方式能够给我国垃圾管理提供一点启示和借鉴，我们能够多方协调配合，调动全民积极性和参与度，在我国实现垃圾源头分类和资源化利用指日可待。
 
-<span style='color:pink;background:背景颜色;font-size:文字大小;font-family:字体;'>**关于我们**</span>
+<span style='color:black;'>**关于我们**</span>
 
 南京大学（溧水）生态环境研究院是南京大学与南京市溧水区人民政府共同创办的独立法人事业单位，是社会公益性环境保护科学研究机构，主要从事具有引领性、创新性、基础性生态环境保护科学研究和成果应用转化。
 
@@ -107,4 +105,4 @@ Aaga是一种密封式好氧堆肥设施，因其造型美观、箱体黄绿相�
 
 研究院网址：https://liee.nju.edu.cn。
 
-<img src="images/image-20201210143100928.png" alt="image-20201210143100928" style="zoom:80%;" />
+<img src="/images/image-20201210143100928.png" alt="image-20201210143100928" style="zoom:80%;" />

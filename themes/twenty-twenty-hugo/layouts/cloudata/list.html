@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+	<style>
+		#sidenav {
+			height: 100%;
+			width: 120px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #fff;
+			overflow-x: scroll;
+			padding-top: 20px;
+			margin-top: 180px;
+			border: 2px solid #4caf50; 
+		}
+
+		#list { 
+			padding-left: 0;
+		}
+
+		#list li {
+			padding: 6px 8px 6px 8px;
+			text-decoration: none;
+			font-size: 15px;
+			color: #818181;
+			display: block;
+			text-align: center;
+		}
+
+		#list li.sel {
+			background-color: #4caf50;
+			border-radius: 32px;
+		}
+
+		#description div {
+			background-color: #eee;
+			height: 300px;
+			text-indent: 4rem;
+		}
+
+		#description div:not(:first-child) {
+			display: none;
+		}
+
+		#description { 
+			margin-left: 160px; /* 与sidenav的宽度相同 */
+			padding: 0px 10px;
+		}
+
+		@media screen and (max-height: 450px) {
+			#sidenav {padding-top: 15px;}
+			#sidenav a {font-size: 18px;}
+		}
+
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$("#list").on("mouseenter", "li", function(event){
+			$(this).addClass("sel").siblings().removeClass("sel");
+			$("#description div").hide().eq($(this).index()).show();
+		});
+		</script>
+	</style>
+</head>
+
+<body class="home page-template-default page wp-embed-responsive singular enable-search-modal has-post-thumbnail has-no-pagination not-showing-comments show-avatars footer-top-visible">
+	{{ partial "head.html" . }}
+	{{ partial "header.html" .}}
+	<main>
+		<div id="sidenav">
+			<ul id="list">
+			  <li>关于我们</li>
+			  <li>服务项目</li>
+			  <li>客户信息</li>
+			</ul>
+		</div>
+		  <div id="description">
+			   <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+			   <div>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lacinia volutpat massa ac feugiat. Cras id arcu a dolor gravida ornare. Proin sollicitudin molestie elit, et fringilla tortor euismod non. Integer eu felis eu nisl sagittis volutpat sit amet sed arcu. Suspendisse quis arcu mattis, congue tortor et, cursus ligula. Phasellus pulvinar dictum libero, ut facilisis ex vehicula eget. Proin porttitor ante eu justo viverra maximus. Praesent efficitur dignissim lorem ac tincidunt. Integer eros eros, mattis blandit cursus vitae, euismod vel velit. Pellentesque tempus ipsum dolor, ac ornare magna dapibus at. Integer in tincidunt nibh. Vestibulum bibendum diam lorem, ut iaculis massa interdum vitae. Praesent nec mi nec nibh rutrum venenatis. Mauris id turpis eu dolor hendrerit pulvinar. </div>
+			   <div> Sed eu dictum dolor, quis maximus velit. Vivamus consequat volutpat est et rutrum. Sed vel cursus urna, et euismod justo. Phasellus elementum ullamcorper urna sed porttitor. Sed eget accumsan lacus. Etiam pretium lectus egestas porta finibus. Etiam eget ultrices eros, congue fermentum eros. Sed viverra turpis ut risus egestas, sed aliquam mauris fringilla. Maecenas fermentum congue nibh, sit amet iaculis mi. Integer at libero pharetra, vulputate nunc et, feugiat sem. Quisque vel viverra orci, scelerisque bibendum lectus.
+	Vivamus tempus tellus eget diam sodales consequat. Nunc mattis finibus sollicitudin. Phasellus condimentum lorem diam, id accumsan magna maximus sed. Sed eu porttitor diam. Duis rhoncus iaculis dui non vehicula. Cras vel ante eget ipsum porttitor porta quis non tellus. Vestibulum tempor nisi in dui fermentum, sit amet lobortis leo mattis. </div>
+		  </div>
+
+
+
+	</main>
+	
+</body>
+
+</html>
+
