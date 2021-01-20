@@ -18,32 +18,32 @@ License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned
 with others.
-*/
+ */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 
-	0. 	CSS Reset
-	1. 	Document Setup
-	2. 	Element Base
-	3. 	Helper Classes
-	4. 	Site Header
-	5. 	Menu Modal
-	6. 	Search Modal
-	7. 	Page Templates
-		a. 	Template: Cover Template
-		c. 	Template: Full Width
-	8.  Post: Archive
-	9.  Post: Single
-	10. Blocks
-	11. Entry Content
-	12. Comments
-	13. Site Pagination
-	14. Error 404
-	15. Widgets
-	16. Site Footer
-	17. Media Queries
+0. 	CSS Reset
+1. 	Document Setup
+2. 	Element Base
+3. 	Helper Classes
+4. 	Site Header
+5. 	Menu Modal
+6. 	Search Modal
+7. 	Page Templates
+a. 	Template: Cover Template
+c. 	Template: Full Width
+8.  Post: Archive
+9.  Post: Single
+10. Blocks
+11. Entry Content
+12. Comments
+13. Site Pagination
+14. Error 404
+15. Widgets
+16. Site Footer
+17. Media Queries
 
 ----------------------------------------------------------------------------- */
 
@@ -143,108 +143,108 @@ body {
 }
 
 *,
-*::before,
-*::after {
-	box-sizing: inherit;
-	-webkit-font-smoothing: antialiased;
-	word-break: break-word;
-	word-wrap: break-word;
-}
+	*::before,
+	*::after {
+		box-sizing: inherit;
+		-webkit-font-smoothing: antialiased;
+		word-break: break-word;
+		word-wrap: break-word;
+	}
 
-#site-content {
-	overflow: hidden;
-}
-
-
-/* Clearing ---------------------------------- */
-
-.group::after,
-.entry-content::after {
-	clear: both;
-	content: "";
-	display: block;
-}
+	#site-content {
+		overflow: hidden;
+	}
 
 
-/* Base Transitions -------------------------- */
+	/* Clearing ---------------------------------- */
 
-a,
-path {
-	transition: all 0.15s linear;
-}
-
-
-/* Screen Reader Text ------------------------ */
-
-.screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	-webkit-clip-path: inset(50%);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important;
-	word-break: normal;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	-webkit-clip-path: none;
-	clip-path: none;
-	color: #21759b;
-	display: block;
-	font-size: 0.875rem;
-	font-weight: 700;
-	height: auto;
-	right: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-}
+	.group::after,
+	.entry-content::after {
+		clear: both;
+		content: "";
+		display: block;
+	}
 
 
-/* Skip Link --------------------------------- */
+	/* Base Transitions -------------------------- */
 
-.skip-link {
-	left: -9999rem;
-	top: 2.5rem;
-	z-index: 999999999;
-	text-decoration: underline;
-}
-
-.skip-link:focus {
-	display: block;
-	left: 6px;
-	top: 7px;
-	font-size: 14px;
-	font-weight: 600;
-	text-decoration: none;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	z-index: 100000;
-	right: auto;
-}
+	a,
+	path {
+		transition: all 0.15s linear;
+	}
 
 
-/* Fonts ------------------------------------- */
+	/* Screen Reader Text ------------------------ */
 
-/*
- * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
- * This results in a jumping cursor when typing in both the classic editor and
- * block editor. The following font-face override fixes the issue by manually
- * inserting a custom font that includes just a Hoefler Text space replacement
- * for that character instead.
- */
+	.screen-reader-text {
+		border: 0;
+		clip: rect(1px, 1px, 1px, 1px);
+		-webkit-clip-path: inset(50%);
+		clip-path: inset(50%);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute !important;
+		width: 1px;
+		word-wrap: normal !important;
+		word-break: normal;
+	}
+
+	.screen-reader-text:focus {
+		background-color: #f1f1f1;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		-webkit-clip-path: none;
+		clip-path: none;
+		color: #21759b;
+		display: block;
+		font-size: 0.875rem;
+		font-weight: 700;
+		height: auto;
+		right: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000;
+	}
+
+
+	/* Skip Link --------------------------------- */
+
+	.skip-link {
+		left: -9999rem;
+		top: 2.5rem;
+		z-index: 999999999;
+		text-decoration: underline;
+	}
+
+	.skip-link:focus {
+		display: block;
+		left: 6px;
+		top: 7px;
+		font-size: 14px;
+		font-weight: 600;
+		text-decoration: none;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		z-index: 100000;
+		right: auto;
+	}
+
+
+	/* Fonts ------------------------------------- */
+
+	/*
+	 * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
+	 * This results in a jumping cursor when typing in both the classic editor and
+	 * block editor. The following font-face override fixes the issue by manually
+	 * inserting a custom font that includes just a Hoefler Text space replacement
+	 * for that character instead.
+	 */
 @font-face {
 	font-family: NonBreakingSpaceOverride;
 	src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAA0AAAAACDQAAALTAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCahEICjx3CywAATYCJANUBCAFhiEHgWwbXQfILgpsY+rQRRARwyAs6uL7pxzYhxEE+32b3aeHmifR6tklkS9hiZA0ewkqGRJE+H7/+6378ASViK/PGeavqJyOzsceKi1s3BCiQsiOdn1r/RBgIJYEgCUhbm/8/8/h4saPssnTNkkiWUBrTRtjmQSajw3Ui3pZ3LYDPD+XG2C3JA/yKAS8/rU5eNfuGqRf4eNNgV4YAlIIgxglEkWe6FYpq10+wi3g+/nUgvgPFczNrz/RsTgVm/zfbPuHZlsuQECxuyqBcQwKFBjFgKO8AqP4bAN9tFJtnM9xPcbNjeXS/x1wY/xU52f5W/X1+9cnH4YwKIaoRRAkUkj/YlAAeF/624foiIDBgBmgQBeGAyhBljUPZUm/l2dTvmpqcBDUOHdbPZWd8JsBAsGr4w8/EDn82/bUPx4eh0YNrQTBuHO2FjQEAGBwK0DeI37DpQVqdERS4gZBhpeUhWCfLFz7J99aEBgsJCHvUGAdAPp4IADDCAPCEFMGpMZ9AQpTfQtQGhLbGVBZFV8BaqNyP68oTZgHNj3M8kBPfXTTC9t90UuzYhy9ciH0grVlOcqyCytisvbsERsEYztiznR0WCrmTksJwbSNK6fd1Rvr25I9oLvctUoEbNOmXJbqgYgPXEHJ82IUsrCnpkxh23F1rfZ2zcRnJYoXtauB3VTFkFXQg3uoZYD5qE0kdjDtoDoF1h2bulGmev5HbYhbrjtohQSRI4aNOkffIcT+d3v6atpaYh3JvPoQsztCcqvaBkppDSPcQ3bw3KaCBo1f5CJWTZEgW3LjLofYg51MaVezrx8xZitYbQ9KYeoRaqQdVLwSEfrKXLK1otCWOKNdR/YwYAfon5Yk8O2MJfSD10dPGA5PIJJQMkah0ugMJiv6x4Dm7LEa8xnrRGGGLAg4sAlbsA07sAt76DOsXKO3hIjtIlpnnFrt1qW4kh6NhS83P/6HB/fl1SMAAA==) format("woff2"), url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUQAA0AAAAACDQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE9AAAABwAAAAchf5yU0dERUYAAATYAAAAHAAAAB4AJwAbT1MvMgAAAaAAAABJAAAAYJAcgU5jbWFwAAACIAAAAF4AAAFqUUxBZ2dhc3AAAATQAAAACAAAAAgAAAAQZ2x5ZgAAApAAAAAyAAAAPL0n8y9oZWFkAAABMAAAADAAAAA2Fi93Z2hoZWEAAAFgAAAAHQAAACQOSgWaaG10eAAAAewAAAAzAAAAVC7TAQBsb2NhAAACgAAAABAAAAAsAOQBAm1heHAAAAGAAAAAHQAAACAAWQALbmFtZQAAAsQAAAF6AAADIYvD/Adwb3N0AAAEQAAAAI4AAADsapk2o3jaY2BkYGAA4ov5mwzj+W2+MnCzXwCKMNzgCBSB0LfbQDQ7AxuI4mBgAlEAFKQIRHjaY2BkYGD3+NvCwMDBAALsDAyMDKhAFAA3+wH3AAAAeNpjYGRgYBBl4GBgYgABEMnIABJzAPMZAAVmAGUAAAB42mNgZlJhnMDAysDCKsKygYGBYRqEZtrDYMT4D8gHSmEHjgUFOQwODAqqf9g9/rYwMLB7MNUAhRlBcsxBrMlASoGBEQAj8QtyAAAAeNrjYGBkAAGmWQwMjO8gmBnIZ2NA0ExAzNjAAFYJVn0ASBsD6VAIDZb7AtELAgANIgb9AHjaY2BgYGaAYBkGRgYQSAHyGMF8FgYPIM3HwMHAxMDGoMCwQIFLQV8hXvXP//9AcRCfAcb///h/ygPW+w/vb7olBjUHCTCyMcAFGZmABBO6AogThgZgIUsXAEDcEzcAAHjaY2BgECMCyoEgACZaAed42mNgYmRgYGBnYGNgYAZSDJqMgorCgoqCjECRXwwNrCAKSP5mAAFGBiRgyAAAi/YFBQAAeNqtkc1OwkAUhU/5M25cEhcsZick0AwlBJq6MWwgJkAgYV/KAA2lJeUn+hY+gktXvpKv4dLTMqKycGHsTZNv7px7z50ZAFd4hYHjdw1Ls4EiHjVncIFnzVnc4F1zDkWjrzmPW+NNcwGlzIRKI3fJlUyrEjZQxb3mDH2fNGfRx4vmHKqG0JzHg6E0F9DOlFBGBxUI1GEzLNT4S0aLuTtsGAEUuYcQHkyg3KmIum1bNUvKlrjbbAIleqHHnS4iSudpQcySMYtdFiXlAxzSbAwfMxK6kZoHKhbjjespMTioOPZnzI+4ucCeTVyKMVKLfeAS6vSWaTinuZwzyy/Dc7vaed+6KaV0kukdPUk6yOcctZPvvxxqksq2lEW8RvHjMEO2FCl/zy6p3NEm0R9OFSafJdldc4QVeyaaObMBO0/5cCaa6d9Ggyubxire+lEojscdjoWUR1xGOy8KD8mG2ZLO2l2paDc3A39qmU2z2W5YNv5+u79e6QfGJY/hAAB42m3NywrCMBQE0DupWp/1AYI7/6DEaLQu66Mrd35BKUWKJSlFv1+rue4cGM7shgR981qSon+ZNwUJ8iDgoYU2OvDRRQ99DDDECAHGmGCKmf80hZSx/Kik/LliFbtmN6xmt+yOjdg9GztV4tROnRwX/Bsaaw51nt4Lc7tWaZYHp/MlzKx51LZs5htNri+2AAAAAQAB//8AD3jaY2BkYGDgAWIxIGZiYARCESBmAfMYAAR6AEMAAAABAAAAANXtRbgAAAAA2AhRFAAAAADYCNuG) format("woff");
@@ -254,7 +254,7 @@ path {
 Inter variable font. Usage:
 
 @supports (font-variation-settings: normal) {
-	html { font-family: 'Inter var', sans-serif; }
+html { font-family: 'Inter var', sans-serif; }
 }
 ---------------------------------------------- */
 
@@ -1795,18 +1795,22 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 
 
 /* overwrite header css */
+.header { 
+	display: block;
+	height: 150px;
+}
+
+.header-dash { 
+	height: 200px;
+	position: relative;
+	z-index: 0;
+	background-color: #495784;
+}
+
 .logo {
 	padding: 0;
-	background-image: url("/images/logo_bg.jpeg")
-}
-
-.logo__link {
-	display: inline-block;
-}
-
-.logo__item {
-	display: inline-block;
-	vertical-align: middle;
+	margin: 25px 0 25px 150px;
+	float: left;
 }
 
 .logo__img {
@@ -1814,61 +1818,24 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children>a {
 	max-width: 581px;
 }
 
-.menu__btn {
-	display: block;
-	width: 100%;
-	padding: 0;
-	font: inherit;
-	border: 0;
-	outline: 0;
-}
-
-.menu__btn-title {
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-	padding: .625rem .9375rem;
-	font-weight: 700;
-	text-align: right;
-	text-transform: uppercase;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-:focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
-}
-
-button:not(:-moz-focusring):focus > .menu__btn-title {
-	box-shadow: none;
-}
-
-.menu__btn:focus,
-.menu__btn-title:focus {
-	outline: 0;
-}
-
-.js .menu__btn--active {
-	color: #d86422; 
+.menu { 
+	float: right;
+	margin-top: 25px;
+	margin-right: 150px;
 }
 
 .menu__list {
-	margin: 0 0 2rem 2rem;
+	margin: 25px 30px 0 0;
 	list-style: none;
 	/* modify nav background color  */
-	background-color: #003152;
-}
-
-.homepage {	
-	width: 30px;
+	/* background-color: #003152; */
 }
 
 .menu__text {	
-	font-size: 18px; 
+	font-size: 20px; 
+	font-weight: 700;
+	/* header text color */
+	color: #000;
 }
 
 .menu__text:hover { 
@@ -1877,7 +1844,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item { 
-	padding: 0 30px;
 	margin-top: 0;
 }
 .menu__item:hover {
@@ -1890,7 +1856,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .menu__link {
 	font: 1.5em;
-	font-weight: bold;
+	font-weight: 400;
 	display: block;
 	padding: 10px 15px;
 	color: #fff;
@@ -1948,9 +1914,156 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 /* overwrite header */
 
+/* overwrite xuehua */
+.post-inner { 
+	margin: 0 0;
+}
+
+  .cloud-grid{
+	  margin: -100px 185px 0 185px;
+	  position: relative;
+	  z-index: 1;
+	  display: block;
+  }
+  
+  .cloud-grid .photo img { 
+	  width: 900px;
+  }
+
+  .cloud-grid .intro { 
+	  position: absolute;
+	  z-index: 2;
+	  top: 15px;
+	  left: 50px;
+  }
+
+  .cloud-grid .intro > h3 { 
+	  margin: 0 0 10px 0;
+  }
+
+  .cloud-grid h3 a { 
+	  font-size: 30px;
+	  color: #495784;
+  }
+
+  .cloud-grid p { 
+	  font-size: 15px;
+	  color: #495784;
+  }
+
+	.carousel { 
+		position: relative;
+		z-index: 0;
+		margin-top: -100px;
+		background-color: #495784;
+	}	
+	
+	.carousel > h2 { 
+		font-size: 30px;
+		font-weight: 700;
+		color: #fff;
+		position: absolute;
+		z-index: 1;
+		left: 565px;
+		top: 151px;
+	}
+
+	.carousel-inner { 
+		left: 185px;
+		top: 200px;
+	}
+
+	.carousel-inner img { 
+		width: 900px;
+	}
+
+	#prev { 
+		left: 185px;
+		top: 350px;
+	}
+
+	#next { 
+		right: 185px;
+		top: 350px;
+	}
+
+	#indicators { 
+		top: 470px;
+	}
+
+	.dash { 
+		height: 350px;
+		background-color: #495784;
+	}
+
+	.carousel1 { 
+		position: relative;
+		z-index: 3;
+		margin-top: -45px;
+		background-color: #495784;
+	}	
+	
+	.carousel1 > h2 { 
+		font-size: 30px;
+		font-weight: 700;
+		color: #fff;
+		position: absolute;
+		z-index: 1;
+		left: 565px;
+		top: -50px;
+	}
+
+	.carousel-inner1 { 
+		position: relative;
+		left: 185px;
+	}
+
+	.carousel-inner1 img { 
+		width: 900px;
+	}
+
+	#prev1 { 
+		left: 185px;
+		top: 350px;
+	}
+
+	#next1 { 
+		right: 185px;
+		top: 350px;
+	}
+
+	#indicators1 { 
+		top: 470px;
+	}
+
+	.Frontier{
+	   display: block;
+	   margin: 0 40px;
+	}
+
+	.Frontier > h2 { 
+		margin: 10px 185px 30px 185px;
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	.Frontier > ul > li { 
+		list-style:none;
+		float: left;
+		width: 33.3%;
+		height: 300px;
+		position: relative;
+		background-color: #618083;
+		margin: 0px;
+	}
+
+	.Frontier > ul > li > a { 
+		margin-left: 1px;
+	}
+
 /* overwrite post */
 
-.card {
+.mycard {
     display: block;
     margin: 3rem 10%;
     box-sizing: border-box;
@@ -1960,67 +2073,55 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
     transition: transform 0.2s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.2s cubic-bezier(0.25,0.8,0.25,1);
 }
 
-.blog-card {
+.blog-mycard {
     display: flex;
     flex-direction: row;
     align-items: stretch;
 }
 
-.card-img-container {
+.mycard-img-container {
     position: relative;
     margin: 0.5rem;
 }
 
-.card-img {
+.mycard-img {
     border-radius: 0.8rem;
     object-fit: cover;
 }
 
-/* seem to be useless */
-/*
-.card-img-overlay {
-    border-radius: 0.8rem 0.8rem 0 0;
-    position: absolute;
-    top: 0;
-    font-size: 1.27em;
-    text-align: center;
-    padding: 0.77em 0;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 5;
-} */
-
-.card-body {
+.mycard-body {
     margin: 1.3em 1.5em;
     line-height: 1.6;
 	float: right;
 }
 
-.card-title {
+.mycard-title {
     margin: 0;
-    font-size: 1.3em;
+    font-size: 30px;
     font-weight: 500;
+	color: #495784;
 }
 
-.card-text {
+.mycard-text {
     margin: 1em 0;
+	font-size: 18px;
+	color: #495784;
 }
 
-.card-subtext {
+.mycard-subtext {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 0.8em;
+	color: #495784;
 }
 
-.card-subtext > p {
+.mycard-subtext > p {
     margin: 0;
+	font-size: 15px;
 }
 
-.card-subtext > p + p {
+.mycard-subtext > p + p {
     margin-left: 1em;
     padding-left: 1em;
     word-spacing: 0.5em;
@@ -2028,22 +2129,124 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 @media screen and (pointer: coarse) {
-    .card-hover {
+    .mycard-hover {
         transform: scale(0.95);
         box-shadow: 0 0.4rem 2rem 0 rgba(0,0,0,0.2);
     }
 }
 
 @media not screen and (pointer: coarse) {
-    .card:hover {
+    .mycard:hover {
         transform: scale(0.97);
         box-shadow: 0 0.4rem 2rem 0 rgba(0,0,0,0.2);
     }
-    .card:active {
+    .mycard:active {
         transform: scale(1);
     }
 }
 /*--------------------------*/
+.jr-footer {	
+	width: 100%;
+	height: 400px;
+	padding-top: 15px;
+	background-image: url("/images/ft_bg.jpeg");
+	background-size: 100%;
+}
+
+.lianjie {	
+	width: 1200px;
+	margin: 50px 0 0 50px;
+	padding: 0.1px;
+}
+
+.content3_title {
+    margin: 30px auto;
+    height: 30px;
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+}
+
+.content3_title div {
+    float: left;
+    display: inline-block;
+}
+
+.title_name {
+    width: 76px;
+    height: 29px;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 49, 82);
+}
+
+.sla_zi { 
+	height: 50px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.sla_zi ul li {
+    float: left;
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 10px;
+    line-height: 36px;
+	list-style: none;
+}
+
+.sla_zi ul li a {	
+	color: #fff;
+	font-size: 14px;
+	padding: 0px 10px;
+	font-family: 微软雅黑;
+}
+
+.footer-ul {	
+	width: 100%;
+	height: 50px;
+}
+
+.footer-ul  .u1 { 
+	margin-left: 78px;
+}
+
+.footer-ul li { 
+	color: #fff;
+}
+
+.footer-ul a {	
+	color: #fff;
+	font-size: 12px;
+}
+
+.footer-ul ul {	
+	list-style-type: none;
+	float: left;
+	display: block;
+	padding-left: 10px;
+}
+
+.u2,
+.u3,
+.u4{	
+    display: block;
+	margin-left: 125px;
+}
+
+.footer {
+    height: 25px;
+    margin: 0 60px;
+    border-top: 0px solid #2b85da;
+    margin-top: 20px;
+}
+
+.footer p {	
+	font-size: 12px;
+	color: #000000;
+}
+
 /* -------------------------------------------------------------------------- */
 
 
@@ -2703,10 +2906,6 @@ h2.entry-title {
 	text-decoration: underline;
 }
 
-.intro-text {
-	margin-top: 2rem;
-}
-
 .singular .intro-text {
 	font-size: 2rem;
 	letter-spacing: -0.0315em;
@@ -2812,8 +3011,10 @@ h2.entry-title {
 /* Featured Media ---------------------------- */
 
 .featured-media {
-	margin-top: 5rem;
+	height: 800px;
 	position: relative;
+	z-index: 0;
+	background-color: #495784;
 }
 
 .singular .featured-media {
@@ -2822,15 +3023,15 @@ h2.entry-title {
 
 .singular .featured-media-inner {
 	position: relative;
-	left: calc(50% - 50vw);
+	left: (50% - 50vw);
 	width: 100vw;
 }
 
 .singular .featured-media::before {
 	background: #fff;
 	content: "";
-	display: block;
 	position: absolute;
+	/* featured-media white background */
 	bottom: 50%;
 	left: 0;
 	right: 0;
@@ -2838,11 +3039,10 @@ h2.entry-title {
 }
 
 .featured-media img {
-	margin: 0 auto;
+	padding: 0 35px;
 }
 
 .featured-media figcaption {
-	margin: 1.5rem auto 0 auto;
 	text-align: center;
 	width: calc(100% - 5rem);
 }
@@ -3727,20 +3927,7 @@ figure.wp-block-table.is-style-stripes {
 
 .entry-content {
 	line-height: 1.5;
-}
-
-.entry-content>* {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.25em;
-}
-
-.entry-content>*:first-child {
-	margin-top: 0;
-}
-
-.entry-content>*:last-child {
-	margin-bottom: 0;
+	margin: 0 185px;
 }
 
 .read-more-button-wrap {
@@ -4761,106 +4948,6 @@ a.to-the-top>* {
 }
 
 /* FOOTER LINKS */
-.lianjie {	
-	height: 200px; 
-	width: 1200px;
-	margin: auto;
-	background: #ffffff;
-	padding: 0.1px;
-}
-
-.content3_title {
-    width: 1160px;
-    margin: 30px auto;
-    height: 30px;
-    border-bottom: 1px solid #dee2e6;
-    position: relative;
-}
-
-.content3_title div {
-    float: left;
-    display: inline-block;
-}
-
-.title_name {
-    width: 76px;
-    height: 29px;
-    font-size: 18px;
-    font-family: 微软雅黑;
-    color: rgb(0, 49, 82);
-    font-weight: bold;
-    border-bottom: 2px solid rgb(0, 49, 82);
-}
-
-.sla_zi ul li {
-    float: left;
-    font-size: 13px;
-    line-height: 25px;
-    margin-top: 10px;
-    line-height: 36px;
-	list-style: none;
-}
-
-.sla_zi ul li a {	
-	background-color: #ffffff;
-	color: #000000;
-	font-size: 14px;
-	padding: 0px 10px;
-	font-family: 微软雅黑;
-}
-
-.jr-footer {	
-	width: 100%;
-	height: 160px;
-	padding-top: 15px;
-	background-image: url("/images/ft_bg.jpg");
-	background-size: 100%;
-}
-
-.footer-ul {	
-	width: 100%;
-	height: 100px;
-}
-
-.footer-ul li { 
-	color: #fff;
-}
-
-.footer-ul a {	
-	color: #fff;
-	font-size: 12px;
-}
-
-.footer-ul ul {	
-	list-style-type: none;
-	float: left;
-	display: block;
-	padding-left: 10px;
-}
-
-.u1 ul {	
-	margin-left: 0;
-}
-
-.u2,
-.u3,
-.u4{	
-    display: block;
-	margin-left: 125px;
-}
-
-.footer {
-    height: 25px;
-    margin: 0 60px;
-    border-top: 0px solid #2b85da;
-    margin-top: 20px;
-}
-
-.footer p {	
-	font-size: 12px;
-	color: #000000;
-}
-
 /* -------------------------------------------------------------------------- */
 
 /*	17. Media Queries
@@ -4922,79 +5009,6 @@ a.to-the-top>* {
 	}
 
   /*  cloud data and frontier */
-  .cloud-grid{
-	  height: 300px; 
-	  padding: 0; 
-	  display: block;
-  }
-  
-  .cloud-grid .photo{
-    float: left; 
-  }
-
-  .cloud-grid .photo img { 
-	width: 400px;
-	height: 300px;
-  }
-
-  .cloud-grid .intro{
-    float: right; 
-    width: 50%; 
-    padding-bottom: 10rem;
-	font-size: 17px;
-  }
-
-  .cloud-grid .intro h3 a { 
-	  color: #495784;
-  }
-
-	.carousel-inner img {
-	   width: 100%;
-	   height: 100%;
-	}
-
-	.Frontier{
-	   display: block;
-	   background-color:#F2F2F2;
-	   margin-bottom: 0;
-	}
-
-	.wrap {
-	   text-align:center;
-	   font-family:Georgia;
-	   font-size:80px;
-		
-	} 
-
-	.Frontier_list{
-		margin:0 20rem;
-	}
-
-	.Frontier_list ul{
-		list-style-type:none;
-		margin:0;
-		padding:0;
-	}
-	  
-	.Frontier_list li{
-		display: inline;   
-	}
-
-	#list li.sel {
-		/* duifeiketang */
-		background-color: #d86422;
-		border-radius: 32px;
-	}
-
-	#box div {
-		background-color: #eee;
-		height: 300px;
-		text-indent: 4rem;
-	}
-
-	#box div:not(:first-child) {
-		display: none;
-	}
 	/* Entry Content ------------------------- */
 
 	/* ALIGNMENT CLASSES */
@@ -5004,13 +5018,13 @@ a.to-the-top>* {
 		max-width: 26rem;
 	}
 
-	/* Post Footer --------------------------- */
+/* Post Footer --------------------------- */
 
-	/* POST NAV LINKS */
+/* POST NAV LINKS */
 
-	.post-nav-links {
-		margin: 3em 0 0 0;
-	}
+.post-nav-links {
+	margin: 3em 0 0 0;
+}
 }
 
 @media (max-width: 599px) {

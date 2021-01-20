@@ -1,207 +1,118 @@
 {{ define "main" }}
 
 <article class="post-20 page type-page status-publish has-post-thumbnail hentry" id="post-20">
-  {{ with .Site.Params.banner.heading }}
-  <header class="entry-header has-text-align-center header-footer-group">
-    <div class="entry-header-inner section-inner medium">
-      <h1 class="entry-title" style="font-size: 3.5rem">{{ . | markdownify }}</h1>
-    </div>
-  </header>
-  {{ end }}
-
-  <div class="featured-media">
-    <div class="featured-media-inner section-inner">
-  {{ .Content }}
-    </div>
-  </div>
-  
-  <!--
-  {{ with .Site.Params.banner.image}}
-  <div class="featured-media">
-  <div class="featured-media-inner section-inner">
-  <iframe width="1200" height="769" src="https://wetland.netlify.app" frameborder="0" scrolling="no" ></iframe>
-  </div>
-  </div>
-  {{end}}
-  -->
-  
-  <div class="post-inner thin">
-    <div class="entry-content">
-	  <!--
-      {{ with .Site.Params.blog.heading }}
-      <div class="wp-block-group alignwide">
-        <div class="wp-block-group__inner-container">
-          <h2 class="has-text-align-center">{{ . | markdownify }}</h2>
-        </div>
-      </div>
-      {{ end }}
-	  -->
-
-	  <!--
-      <div class="wp-block-columns columns alignwide">
-        {{ range (where .Site.RegularPages "section" "blog")}}
-        <div class="column">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <figure class="wp-block-image alignfull size-full"><img src="{{ .Params.Image |absURL }}"
-                  alt="{{.Title }}" class="wp-image-37" /></figure>
-              <h3>{{ .Title }}</h3>
-              <p>{{ .PublishDate.Format "January 6, 2006"}}</p>
-              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link"
-                  href="{{ .Permalink }}">阅读更多</a></div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div> 
-	  -->
-
-      {{ if .Site.Params.call_to_action.enable }}
-      {{ with .Site.Params.call_to_action }}
-      <div class="wp-block-group alignwide has-background" style="background-color:#ffffff">
-        <div class="wp-block-group__inner-container">
-          <div class="wp-block-group">
-            <div class="wp-block-group__inner-container">
-              <h2 class="has-text-align-center">{{ .title | markdownify }}</h2>
-              <p class="has-text-align-center">{{ .content | markdownify }}</p>
-              <div class="wp-block-button aligncenter"><a class="wp-block-button__link"
-                  href="{{ .button_url | absURL }}">{{ .button_label }}</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-      {{ end }}
-
-<!--      
-      {{ if .Site.Params.gallery.enable }}
-      {{ with .Site.Params.gallery }}
-        <ul class="new-gallery-grid">
-          {{ range .gallery_item }}
-          <li class="new-gallery">
-			  <div class="img-group">
-				<img src="{{ .image | absURL }}" />
-				<div class="img-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta dolor neque, at consectetur arcu vulputate non.</div>
-			  </div>
-          </li>
-          {{ end }}
-        </ul>
-      {{ end }}
-      {{ end }}
--->
-
-      {{ if .Site.Params.cloud.enable }}
-      {{ with .Site.Params.cloud }}      
-        <div class="cloud-grid" >
-			<a name="xuehua"></a>
-	        <div class="photo"><img src="images/xuehua.png"></div>
-	        <div class="intro">
-				<h3 style="font-size: 25px; margin: 0 0 3rem 0; border-bottom-style: groove; border-bottom-width: 5px;"><a href="/blog">雪华说</a></h3>
-			  <p>张雪华，南京大学（溧水）生态与环境研究院首席科学家<br>
-			  • 斯坦福大学环境与资源跨学科博士、授课讲师和访问学者<br>
-			  • 四川大学新能源与低碳技术研究院特聘研究员<br>
-			  • 联合国环境规划署、世界银行、国际气候政策研究院、美国国家环保署等机构的环境与气候政策高级顾问<br>
-			  • 成都市河流研究会理事、全球环境专家协会理事和中国环境协会环境经济分会主任委员<br>
-			  • 从事生活垃圾分类及其资源化管理<br>
-			  </p>
-	        </div>
-        </div>
-      {{ end }}
-      {{ end }}      
-
-
-
-      {{ if .Site.Params.Frontier.enable }}
-      {{ with .Site.Params.Frontier }}
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-	  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-	  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-	  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-		  <div id="demo" class="carousel slide" data-ride="carousel" >
-	 
-	  <!-- 指示符 -->
-	  <ul class="carousel-indicators">
-		<li data-target="#demo" data-slide-to="0" class="active"></li>
-		<li data-target="#demo" data-slide-to="1"></li>
-		<li data-target="#demo" data-slide-to="2"></li>
-	  </ul>
-	 
-	  <!-- 轮播图片 -->
-	  <div class="carousel-inner">
-		  <h2 style="margin: 0; text-align: center; font-size: 30px;">前沿动态</h2>
-		<div class="carousel-item active">
-		  <img src="images/carousel1.png">
-		  <div class="carousel-caption">
-			<h3>行业如何发展?</h3>
-			<p>描述文字!</p>
-		  </div>
+	<div class="featured-media">
+		<div class="featured-media-inner section-inner">
+			{{ .Content }}
 		</div>
-		<div class="carousel-item">
-		  <img src="images/carousel2.png">
-		  <div class="carousel-caption">
-			<h3>同行在做什么?</h3>
-			<p>描述文字!</p>
-		  </div>
-		</div>
-		<div class="carousel-item">
-		  <img src="images/carousel3.png">
-		  <div class="carousel-caption">
-			<h3>我们在做什么?</h3>
-			<p>描述文字!</p>
-		  </div>
-		</div>
-	  </div>
-
-
-	  <!-- 左右切换按钮 -->
-	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-		<span class="carousel-control-prev-icon"></span>
-	  </a>
-	  <a class="carousel-control-next" href="#demo" data-slide="next">
-		<span class="carousel-control-next-icon"></span>
-	  </a>
-	<script>
-	$(function(){
-		$('#identifier').carousel({
-		interval: 2000
-		});
-		});
-	</script> 
 	</div>
-      {{ end }}
-      {{ end }}
 
-<!-- frontier list -->
-	  <div class="Frontier">
-		  <ul id="list" class="Frontier_list">
-			  <li>堆肥小课堂1</li>
-			  <li>堆肥小课堂2</li>
-			  <li>堆肥小课堂3</li>
-		  </ul>
-		  <!-- <a class="button">了解详情</a> -->
-	  </div>
+	<!--
+	 {{ with .Site.Params.banner.image}}
+	 <div class="featured-media">
+	 <div class="featured-media-inner section-inner">
+	 <iframe width="1200" height="769" src="https://wetland.netlify.app" frameborder="0" scrolling="no" ></iframe>
+	 </div>
+	 </div>
+	 {{end}}
+	-->
 
-	  <div id="box">
-		   <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
-		   <div>Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam lacinia volutpat massa ac feugiat. Cras id arcu a dolor gravida ornare. Proin sollicitudin molestie elit, et fringilla tortor euismod non. Integer eu felis eu nisl sagittis volutpat sit amet sed arcu. Suspendisse quis arcu mattis, congue tortor et, cursus ligula. Phasellus pulvinar dictum libero, ut facilisis ex vehicula eget. Proin porttitor ante eu justo viverra maximus. Praesent efficitur dignissim lorem ac tincidunt. Integer eros eros, mattis blandit cursus vitae, euismod vel velit. Pellentesque tempus ipsum dolor, ac ornare magna dapibus at. Integer in tincidunt nibh. Vestibulum bibendum diam lorem, ut iaculis massa interdum vitae. Praesent nec mi nec nibh rutrum venenatis. Mauris id turpis eu dolor hendrerit pulvinar. </div>
-		   <div> Sed eu dictum dolor, quis maximus velit. Vivamus consequat volutpat est et rutrum. Sed vel cursus urna, et euismod justo. Phasellus elementum ullamcorper urna sed porttitor. Sed eget accumsan lacus. Etiam pretium lectus egestas porta finibus. Etiam eget ultrices eros, congue fermentum eros. Sed viverra turpis ut risus egestas, sed aliquam mauris fringilla. Maecenas fermentum congue nibh, sit amet iaculis mi. Integer at libero pharetra, vulputate nunc et, feugiat sem. Quisque vel viverra orci, scelerisque bibendum lectus.
-Vivamus tempus tellus eget diam sodales consequat. Nunc mattis finibus sollicitudin. Phasellus condimentum lorem diam, id accumsan magna maximus sed. Sed eu porttitor diam. Duis rhoncus iaculis dui non vehicula. Cras vel ante eget ipsum porttitor porta quis non tellus. Vestibulum tempor nisi in dui fermentum, sit amet lobortis leo mattis. </div>
-	  </div>
+	<div class="post-inner thin">
+		<div>
+			{{ if .Site.Params.cloud.enable }}
+			{{ with .Site.Params.cloud }}      
+			<div class="cloud-grid">
+				<a name="xuehua"></a>
+				<div class="photo"><img src="images/xuehua.jpg"></div>
+				<div class="intro">
+					<h3><a href="/blog">雪华说</a></h3>
+					<p>张雪华<br>
+					• 南京大学（溧水）生态与环境研究院首席科学家<br>
+					• 斯坦福大学环境与资源跨学科博士、授课讲师和访问学者<br>
+					• 成都市河流研究会理事、全球环境专家协会理事和中国环境协会环境经济分会主任委员<br>
+					• 四川大学新能源与低碳技术研究院特聘研究员<br>
+					• 联合国环境规划署、世界银行、国际气候政策研究院、<br>
+					美国国家环保署等机构的环境与气候政策高级顾问<br>
+					</p>
+				</div>
+			</div>
+			{{ end }}
+			{{ end }}      
 
+			{{ if .Site.Params.Frontier.enable }}
+			{{ with .Site.Params.Frontier }}
+			<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+			<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<!-- 指示符 -->
+				<ul id="indicators" class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
 
-	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$("#list").on("mouseenter", "li", function(event){
-		$(this).addClass("sel").siblings().removeClass("sel");
-		$("#box div").hide().eq($(this).index()).show();
-	});
-	</script>
+				<!-- 轮播图片 -->
+				<h2>前沿动态</h2> 
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/carousel1.png">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel2.png">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel2.png">
+					</div>
+				</div>
 
-    </div><!-- .entry-content -->
-  </div><!-- .post-inner -->
+				<!-- 左右切换按钮 -->
+				<a id="prev" class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a id="next" class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+			{{ end }}
+			{{ end }}
+
+			<div class="dash"></div>
+
+			<div id="demo" class="carousel1 slide" data-ride="carousel">
+				<!-- 指示符 -->
+				<ul id="indicators1" class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+
+				<!-- 轮播图片 -->
+				<h2>堆肥小课堂</h2> 
+				<div class="carousel-inner1">
+					<div class="carousel-item active">
+						<img src="images/carousel1.png">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel2.png">
+					</div>
+					<div class="carousel-item">
+						<img src="images/carousel2.png">
+					</div>
+				</div>
+
+				<!-- 左右切换按钮 -->
+				<a id="prev1" class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a id="next1" class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
 </article>
 
 {{ end }}

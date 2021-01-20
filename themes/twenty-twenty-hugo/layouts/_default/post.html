@@ -1,19 +1,19 @@
-<a ontouchstart="cardpressed.call(this)" ontouchend="cardreleased.call(this)" ontouchmove="cardreleased.call(this)" 
-  href="{{ .Permalink }}" class="card blog-card" rel="bookmark" >
-  {{ with .Resources.GetMatch "featuredimage" }}
-  <div class="card-img-container">
+<a ontouchstart="mycardpressed.call(this)" ontouchend="mycardreleased.call(this)" ontouchmove="mycardreleased.call(this)" 
+  href="{{ .Permalink }}" class="mycard blog-mycard" rel="bookmark" >
+  {{ with .Resources.GetMatch "featuredImage" }}
+  <div class="mycard-img-container">
     <picture>
 	<!-- .resize .fill smart -->
       {{ $thumbnail := .Resize "500x250" }}
       <source srcset="{{ $thumbnail.Permalink }}">
-	  <img src="{{ $thumbnail.Permalink }}" class="card-img" style="min-height: 80px"/>
+	  <img src="{{ $thumbnail.Permalink }}" class="mycard-img" style="min-height: 80px"/>
     </picture>
   </div>
   {{- end }}
-  <article class="card-body">
-    <h2 class="card-title">{{ .Title }}</h2>
-    <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}</p>
-    <div class="card-subtext muted-text">
+  <article class="mycard-body">
+    <h2 class="mycard-title">{{ .Title }}</h2>
+    <p class="mycard-text">{{ if (isset .Params "description") }}{{ index .Params "description" | htmlUnescape }}{{ else }}{{ .Summary | plainify | htmlUnescape }}{{ end }}</p>
+    <div class="mycard-subtext muted-text">
       <p>Posted: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "jan 2, 2006" }}</time></p>
     </div>
   </article>

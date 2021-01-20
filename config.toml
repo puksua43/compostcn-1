@@ -49,7 +49,7 @@ weight = 2
 
 [[menu.main]]
 name = "雪华说"
-URL = "#xuehua"
+URL = "/#xuehua"
 weight = 3
 
 [[menu.main]]
@@ -59,7 +59,7 @@ weight = 4
 
 [[menu.main]]
 name = "堆肥小课堂"
-URL = "#"
+URL = "/duifei"
 weight = 5
 
 [[menu.main]]
@@ -101,7 +101,7 @@ image = "images/2020-landscape-1-2.png"
 
 # logo
 [params.logo]
-image = "images/logo.png" 
+image = "images/logo.jpg" 
   
 #cloud
 [params.cloud]
@@ -145,11 +145,6 @@ URL = "https://hjxy.nju.edu.cn/"
 weight = 2
 
 [[params.links]]
-name = "南京大学自然资源研究院"
-URL = "https://liee.nju.edu.cn/"
-weight = 3
-
-[[params.links]]
 name = "生态环境部"
 URL = "http://www.mee.gov.cn/"
 weight = 4
@@ -164,3 +159,7 @@ name = "中国环境科学协会"
 URL = "http://www.chinacses.org/"
 weight = 6
 
+[[params.links]]
+name = "Resources, Environment and Sustainability期刊"
+URL = "https://www.journals.elsevier.com/resources-environment-and-sustainability/"
+weight = 7

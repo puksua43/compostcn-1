@@ -2,43 +2,46 @@
 {{- $logoTitle := .Site.Params.logo.title -}}
 {{- $logoSubtitle := .Site.Params.logo.subtitle -}}
 {{- $logoImage := .Site.Params.logo.image -}}
-{{- $homepage := .Site.Params.homepage.image -}}
 
-{{- if or $logoTitle $logoImage }}
-	{{/* Defined when logo is mixed (image + text) */}}
-	{{- $logoMix := and $logoImage $logoTitle -}}
+<div class="header">
+	{{- if or $logoTitle $logoImage }}
+		{{/* Defined when logo is mixed (image + text) */}}
+		{{- $logoMix := and $logoImage $logoTitle -}}
 
-	<div class="logo{{ with $logoMix }} logo--mixed{{ end }}">
-		<a class="logo__link" href="{{ "" | relLangURL }}"{{ with $logoTitle }} title="{{ . }}"{{ end }} rel="home">
-			{{ with $logoImage -}}
-				<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="{{ . | relURL }}">
-				</div>
-			{{- end -}}
-			{{ with $logoTitle -}}
-				<div class="logo__item logo__text">
-					<div class="logo__title">{{ . }}</div>
-					{{ with $logoSubtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
-				</div>
-			{{- end }}
-		</a>
-	</div>
-{{- end }}
-
-{{- if .Site.Menus.main -}}
-<nav class="menu">
-	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
-	</button>
-	<ul class="menu__list">
-		{{- $currentNode := . }}
-		{{- range .Site.Menus.main }}
-		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
-			<a class="menu__link" href="{{ if or (eq .URL "cloudata") (eq .URL "about")}}#{{ .URL }}{{ else }}{{ .URL }}{{ end }}">
-				<span class="menu__text">{{ .Name }}</span>
+		<div class="logo{{ with $logoMix }} logo--mixed{{ end }}">
+			<a class="logo__link" href="{{ "" | relLangURL }}"{{ with $logoTitle }} title="{{ . }}"{{ end }} rel="home">
+				{{ with $logoImage -}}
+					<div class="logo__item logo__imagebox">
+						<img class="logo__img" src="{{ . | relURL }}">
+					</div>
+				{{- end -}}
+				{{ with $logoTitle -}}
+					<div class="logo__item logo__text">
+						<div class="logo__title">{{ . }}</div>
+						{{ with $logoSubtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
+					</div>
+				{{- end }}
 			</a>
-		</li>
-		{{- end }}
-	</ul>
-</nav>
-{{- end }}
+		</div>
+	{{- end }}
+
+	{{- if .Site.Menus.main -}}
+	<nav class="menu">
+		<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+			<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+		</button>
+		<ul class="menu__list">
+			{{- $currentNode := . }}
+			{{- range .Site.Menus.main }}
+			<li class="menu__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+				<a class="menu__link" href="{{ if or (eq .URL "cloudata") (eq .URL "about")}}#{{ .URL }}{{ else }}{{ .URL }}{{ end }}">
+					<span class="menu__text">{{ .Name }}</span>
+				</a>
+			</li>
+			{{- end }}
+		</ul>
+	</nav>
+	{{- end }}
+</div>
+
+<div class="header-dash"></div>

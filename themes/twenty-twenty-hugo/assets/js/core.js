@@ -1,9 +1,9 @@
-function cardPressed() {
-    this.classList.add('card-hover');
+function mycardPressed() {
+    this.classList.add('mycard-hover');
 }
 
-function cardReleased() {
-    this.classList.remove('card-hover');
+function mycardReleased() {
+    this.classList.remove('mycard-hover');
 }
 
 function hamburgerMenuPressed() {

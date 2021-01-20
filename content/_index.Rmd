@@ -1,13 +1,176 @@
 ---
 title: Home
 ---
-
-```{r, echo=FALSE, out.width="100%", fig.height=7}
-library(leaflet)
-
-m <- leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
-m  # Print the map
+```{css, echo=FALSE}
+d-title {
+  text-align: center;
+}
 ```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(readxl)
+library(leaflet)
+library(leafletCN)
+library(plotly)
+library(highcharter)
+library(echarts4r)
+library(lubridate)
+library(crosstalk)
+# library(bootstraplib)
+# bs_theme_new()
+# # Color palette derives from https://tombrow.com/dark-mode-website-css
+# bs_theme_base_colors(bg = "#444", fg = "#e4e4e4")
+# bs_theme_accent_colors(primary = "#e39777",
+#                        secondary = "#fdce93")
+# bs_theme_fonts(base = "Roboto Condensed",
+#                code = "Monaco")
+d <- read_excel("all3.xlsx")
+pcols <-
+  c(
+    "red",
+    "darkred",
+    "lightred",
+    "orange",
+    "beige",
+    "green",
+    "darkgreen",
+    "lightgreen",
+    "blue",
+    "darkblue",
+    "lightblue",
+    "purple",
+    "darkpurple",
+    "pink",
+    "cadetblue",
+    "white",
+    "gray",
+    "lightgray",
+    "black"
+  )
+ll <- d %>% distinct(across(c(2, 31:32, 35:36)))
+set.seed(12335)
+palbk <- tibble(
+  id = 1:10,
+  color = pcols[c(1, 4:6, 9:10, 12:15)] %>% sample(),
+  `伙伴名称` = ll %>% distinct(`伙伴名称`) %>% pull()
+)
+icons <- awesomeIcons(
+  icon = 'trash',
+  iconColor = 'white',
+  library = 'glyphicon',
+  markerColor = ll %>% left_join(palbk) %>% with(color)
+)
+d1 <- d %>% select(4, 2, 31, 14:17) %>%
+  gather(`温度类型`, `数值`, -c(1:3)) %>%
+  rename(`时间` = `获取监测数据的时间`) %>%
+  mutate(`时间` = ymd(`时间`)) %>%
+  arrange(across(1:3)) %>%
+  filter(!is.na(`数值`))
+lv <- unique(d1$`温度类型`)[c(1, 4, 3, 2)]
+d2 <- d %>% select(4, 2, 31, 6, 9, 12) %>%
+  gather(`物质类型`, `数值`, -c(1:3)) %>%
+  mutate(`物质类型` = str_replace_all(`物质类型`,
+                                  "今日|添加|重量.*",
+                                  "")) %>%
+  rename(`时间` = `获取监测数据的时间`) %>%
+  mutate(`时间` = ymd(`时间`)) %>%
+  arrange(across(1:3)) %>%
+  filter(!is.na(`数值`))
+dd1 <- d1 %>% filter(str_detect(`伙伴名称`, "溧水"),
+                     `堆肥池` == "Ghana左") %>%
+  {
+    a <- range(.$`时间`) %>% Reduce(":", .) %>%
+      as.Date(origin = "1970-01-01") %>%
+      tibble(`时间` = .)
+    b <- expand_grid(a, distinct(., `堆肥池`, `温度类型`))
+    full_join(b, .)
+  } %>%
+  mutate(`温度类型` = factor(`温度类型`, levels = lv))
+dd2 <- d2 %>% filter(str_detect(`伙伴名称`, "溧水"),
+                     `堆肥池` == "Ghana左")
+sl <- SharedData$new(ll, ~ `堆肥池`, group = "堆肥池")
+sd1 <- SharedData$new(dd1, ~ `伙伴名称`, group = "伙伴名称")
+sd2 <- SharedData$new(dd2, ~ `伙伴名称`, group = "伙伴名称")
+```
+
+
+```{r, layout="l-page", fig.height=6}
+ppp <- paste0(
+  "<h5>",
+  ll$`堆肥池`,
+  "</h5>",
+  
+  "<table style='width:100%'>",
+  
+  "<tr>",
+  "<th>单位：</th>",
+  "<th>",
+  ll$`伙伴名称`,
+  "</th>",
+  "</tr>",
+  
+  "<tr>",
+  "<tr>",
+  "<th>地址：</th>",
+  "<th>",
+  ll$`地址`,
+  "</th>",
+  "</tr>",
+  
+  "<tr>",
+  "<tr>",
+  "<th>经纬度：</th>",
+  "<th>",
+  round(ll$`经度GCJ`, 4),
+  ", ",
+  round(ll$`纬度GCJ`, 4),
+  "</th>",
+  "</tr>"
+)
+sl %>% leaflet() %>% amap() %>%
+  setView(113, 30, zoom = 3) %>%
+  addAwesomeMarkers(
+    lng = ~ jitter(`经度GCJ`),
+    lat = ~ jitter(`纬度GCJ`),
+    popup = ~ ppp,
+    icon = icons,
+    group = "H"
+  ) %>% addMeasure() %>%
+  leafem::addHomeButton(group = "H")
+```
+
+## 测试
+
+```{r, layout="l-page"}
+# gg1 <- dd1 %>%
+#   ggplot(aes(`时间`, `数值`, color = `温度类型`)) +
+#   geom_line() + geom_point(shape = 1) +
+#   xlab(NULL) + ylab(NULL) +
+#   scale_x_date(date_labels = "%F") +
+#   theme_minimal(base_family = "Hei")
+# ggplotly(gg1) %>%
+#   layout(legend = list(orientation = "h", y = -0.1))
+highchart() %>%
+  # hc_title(text = "Basic drilldown") %>%
+  hc_xAxis(type = "category") %>%
+  hc_legend(enabled = FALSE) %>%
+  hc_plotOptions(
+    series = list(
+      boderWidth = 0,
+      dataLabels = list(enabled = TRUE)
+    )
+  ) %>%
+  hc_add_series(
+    data = d1 %>% group_by(`堆肥池`, `伙伴名称`) %>%
+      summarise(`数量` = n()) %>% ungroup(),
+    type = "bar",
+    hcaes(`堆肥池`, `数量`, group = `伙伴名称`),
+    pointWidth = 8
+  )
+```
+
+
+
 
