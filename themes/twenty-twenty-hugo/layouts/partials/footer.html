@@ -85,8 +85,6 @@
 </script>
 
 <!-- jquery -->
-{{ $jquery := resources.Get "js/jquery.min.js" | minify}}
-<script src="{{ $jquery.Permalink }}"></script>
 
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>

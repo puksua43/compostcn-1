@@ -1,7 +1,7 @@
 ---
 author: ["张雪华",]
 title: 他山之石可以攻玉-做个Ghana学堆肥
-date: "2020-03-14"
+date: "2020-03-12"
 summary: 雪华说：Ghana是我们目前看到的未借助外来动力、透气性最好的堆肥设施之一，在此首先感谢印度堆肥专家Vasuki授权我们无偿使用和推广其设计。
 resources:
 - name: featuredImage
